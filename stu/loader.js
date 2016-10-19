@@ -98,4 +98,4 @@ var loader_loop = setInterval(function () {
 
         base_rotate(loader_sturbles[i]['id'],loader_sturbles[i]['currot']);
     }
-},50);
+},40);
