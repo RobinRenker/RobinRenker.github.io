@@ -9,6 +9,7 @@ $(window).load(function () {
 });
 //#####################################
 var loader_active = false;
+var loader_sleep = 40;
 var loader_sturbles = [
     {
         'form':'tri',
@@ -98,4 +99,4 @@ var loader_loop = setInterval(function () {
 
         base_rotate(loader_sturbles[i]['id'],loader_sturbles[i]['currot']);
     }
-},40);
+},loader_sleep);
