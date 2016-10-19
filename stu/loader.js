@@ -76,7 +76,6 @@ function loader_dat_update() {
     x = x + '<dt>IP Address:</dt><dd>'+base_data['ip']+'</dd>';
     x = x + '<dt>Mobile Dev:</dt><dd>'+base_data['is_mobile']+'</dd>';
     $('#loaderdata').html(x);
-    console.log("pass");
 }
 //#####################################
 var loader_loop = setInterval(function () {
