@@ -1,0 +1,36 @@
+#loader{
+    width:200px;
+    height: 200px;
+    position: absolute;
+    overflow: visible;
+}
+#loader_wr{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.loader_wrap{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/*############*/
+#loaderdata{
+    position: absolute;
+    left:0;
+    top:0;
+    font-family: sans-serif;
+    color: grey;
+}
+/*############*/
+/*Form*/
+.tri{
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 200px solid;
+    margin:0px auto;
+}
