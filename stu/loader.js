@@ -15,9 +15,9 @@ var loader_sturbles = [
         'form':'tri',
         'rgba':'rgba(100,220,30,0.5)',
         'id':'',
-        'maxspeed':10,
+        'maxspeed':4,
         'curspeed':0,
-        'accel':0.2,
+        'accel':0.02,
         'currot':0,
         'revend':false
     },
@@ -25,9 +25,9 @@ var loader_sturbles = [
         'form':'tri',
         'rgba':'rgba(250,220,5,0.5)',
         'id':'',
-        'maxspeed':15,
+        'maxspeed':5,
         'curspeed':0,
-        'accel':0.2,
+        'accel':0.04,
         'currot':0,
         'revend':true
     },
@@ -35,10 +35,10 @@ var loader_sturbles = [
         'form':'tri',
         'rgba':'rgba(220,0,250,0.5)',
         'id':'',
-        'maxspeed':10,
+        'maxspeed':4,
         'curspeed':0,
         'accel':0.05,
-        'currot':0,
+	'currot':0,
         'revend':true
     }
 ];
