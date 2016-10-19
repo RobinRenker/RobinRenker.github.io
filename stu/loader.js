@@ -9,7 +9,7 @@ $(window).load(function () {
 });
 //#####################################
 var loader_active = false;
-var loader_sleep = 40;
+var loader_sleep = 15;
 var loader_sturbles = [
     {
         'form':'tri',
@@ -17,7 +17,7 @@ var loader_sturbles = [
         'id':'',
         'maxspeed':10,
         'curspeed':0,
-        'accel':0.5,
+        'accel':0.2,
         'currot':0,
         'revend':false
     },
@@ -27,7 +27,7 @@ var loader_sturbles = [
         'id':'',
         'maxspeed':15,
         'curspeed':0,
-        'accel':0.5,
+        'accel':0.2,
         'currot':0,
         'revend':true
     },
@@ -37,7 +37,7 @@ var loader_sturbles = [
         'id':'',
         'maxspeed':10,
         'curspeed':0,
-        'accel':0.2,
+        'accel':0.05,
         'currot':0,
         'revend':true
     }
