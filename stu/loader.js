@@ -12,8 +12,7 @@ var loader_active = false;
 var loader_sleep = 15;
 var loader_sturbles = [
     {
-        'form':'tri',
-        'rgba':'rgba(100,220,30,0.5)',
+        'form':'loader_tri_1',
         'id':'',
         'maxspeed':4,
         'curspeed':0,
@@ -22,8 +21,7 @@ var loader_sturbles = [
         'revend':false
     },
     {
-        'form':'tri',
-        'rgba':'rgba(250,220,5,0.5)',
+        'form':'loader_tri_2',
         'id':'',
         'maxspeed':5,
         'curspeed':0,
@@ -32,13 +30,12 @@ var loader_sturbles = [
         'revend':true
     },
     {
-        'form':'tri',
-        'rgba':'rgba(220,0,250,0.5)',
+        'form':'loader_tri_3',
         'id':'',
         'maxspeed':4,
         'curspeed':0,
         'accel':0.05,
-	'currot':0,
+	    'currot':0,
         'revend':true
     }
 ];
@@ -49,18 +46,18 @@ function loader_clear() {
 function loader_resize(){
     $('#loader')
         .css({
-            'top':(base_get_win_siz()[1]-$('#loader').height())/2+"px",
-            'left':(base_get_win_siz()[0]-$('#loader').width())/2+"px"
+            'top':(base_window_size()[1]-$('#loader').height())/2+"px",
+            'left':(base_window_size()[0]-$('#loader').width())/2+"px"
         });
 }
 function loader_ani_create(){
     loader_active = true;
-    var lo = ['<div id="loader"><div id="loader_wr">','</div></div>'];
+    var lo = ['<div id="loader"><div id="loader_wr" class="mirror">','</div></div>'];
 
     for(var i = 0; i < loader_sturbles.length;i++){
         loader_sturbles[i]['id'] = "sturb_"+i;
         lo[0] = lo[0] + '<div class="loader_wrap" id="sturb_'+i+'">';
-        lo[0] = lo[0] + '<div class="'+loader_sturbles[i]['form']+'" style="border-bottom-color:'+loader_sturbles[i]['rgba']+'"></div>';
+        lo[0] = lo[0] + '<div id="'+loader_sturbles[i]['form']+'" class="loader_tri"></div>';
         lo[0] = lo[0] + '</div>';
     }
 
@@ -70,7 +67,7 @@ function loader_ani_create(){
 function loader_dat_create() {
     var x = '<dl id="loaderdata"></dl>';
     $('#b').html($('#b').html()+x);
-    base_data_update[base_data_update.length] = 'loader_dat_update';
+    base_data_to_call[base_data_to_call.length] = 'loader_dat_update';
 }
 function loader_dat_update() {
     var x = "";
@@ -97,6 +94,6 @@ var loader_loop = setInterval(function () {
             }
         }
 
-        base_rotate(loader_sturbles[i]['id'],loader_sturbles[i]['currot']);
+        base_rotate_old(loader_sturbles[i]['id'],loader_sturbles[i]['currot']);
     }
 },loader_sleep);

@@ -26,11 +26,24 @@
 }
 /*############*/
 /*Form*/
-.tri{
+.loader_tri {
     width: 0;
     height: 0;
-    border-left: 70px solid transparent;
-    border-right: 20px solid transparent;
     border-bottom: 200px solid;
     margin:0px auto;
+}
+#loader_tri_1{
+    border-left:60px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom-color: rgba(100,220,30,0.5);
+}
+#loader_tri_2{
+    border-left:45px solid transparent;
+    border-right: 45px solid transparent;
+    border-bottom-color: rgba(250,220,5,0.5)
+}
+#loader_tri_3{
+    border-left:20px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom-color: rgba(220,0,250,0.5);
 }
