@@ -42,6 +42,7 @@ function mirror_update_mouse(el,obj){
 }
 function mirror_update_mobile(el,obj){
     base_rotate(el,mirror_pos_chop(base_data['mobile_start_orientation']['beta']-obj['beta']),'x');
+    base_rotate(el,mirror_pos_chop(base_data['mobile_start_orientation']['gamma']-obj['gamma']),'y');
 }
 function mirror_pos_chop(val){
     if(val > mirror_data['max_degree']){
