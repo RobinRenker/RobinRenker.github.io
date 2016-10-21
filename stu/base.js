@@ -15,11 +15,11 @@ $(window).load(function(){
 });
 window.addEventListener('deviceorientation', function(eventData) {
     var ret = {};
-    ret['alpha'] = parseInt(eventData.alpha);
+    ret['alpha'] = parseFloat(eventData.alpha);
     // beta is the front-to-back tilt in degrees
-    ret['beta'] = parseInt(eventData.beta);
+    ret['beta'] = parseFloat(eventData.beta);
     // gamma is the left-to-right tilt in degrees
-    ret['gamma'] = parseInt(eventData.gamma);
+    ret['gamma'] = parseFloat(eventData.gamma);
     base_data['mobile_orientation'] = ret;
 }, false);
 /*#####################################################*/
