@@ -15,21 +15,24 @@ $(window).load(function(){
 });
 window.addEventListener('deviceorientation', function(eventData) {
     var ret = {};
-    ret['alpha'] = parseFloat(eventData.alpha);
+    ret['alpha'] = parseInt(eventData.alpha);
     // beta is the front-to-back tilt in degrees
-    ret['beta'] = parseFloat(eventData.beta);
+    ret['beta'] = parseInt(eventData.beta);
     // gamma is the left-to-right tilt in degrees
-    ret['gamma'] = parseFloat(eventData.gamma);
-    base_data['mobile_orientation'] = ret;
+    ret['gamma'] = parseInt(eventData.gamma);
+    base_data['mobile_current_orientation'] = ret;
+
+    if(base_data['mobile_start_orientation'] == undefined){
+        base_data['mobile_start_orientation'] = ret;
+    }
 }, false);
 /*#####################################################*/
 var base_data = {
     'ip':'none',
-    'is_mobile':false
+    'is_mobile':undefined
 };
 var base_loaded_scripts = [];
-var supportsOrientationChange = "onorientationchange" in window,
-    orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
+var supportsOrientationChange = "onorientationchange" in window, orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
 /*#####################################################*/
 function base_rotate_old(el, deg){
     var elem = document.getElementById(el);
