@@ -23,7 +23,7 @@ window.addEventListener('deviceorientation', function(eventData) {
 //#####################################
 var mirror_data = {
     'listen_on':'',
-    'max_degree':40,
+    'max_degree':60,
     'mouse_sens_radius':300
 };
 //#####################################
@@ -41,7 +41,7 @@ function mirror_update_mouse(el,obj){
 
 }
 function mirror_update_mobile(el,obj){
-    base_rotate(el,mirror_pos_chop(obj['beta']),'x');
+    base_rotate(el,mirror_pos_chop(base_data['mobile_start_orientation']['beta']-obj['beta']),'x');
 }
 function mirror_pos_chop(val){
     if(val > mirror_data['max_degree']){
