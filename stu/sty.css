@@ -1,3 +1,5 @@
+@import 'loader.css';
+/*################################*/
 :root {
     --dummy: white;
 }
@@ -7,4 +9,4 @@ body{
     background-color: white;
     position: absolute;
 }
-/*################################*/
+
