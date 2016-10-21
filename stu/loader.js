@@ -7,6 +7,9 @@ $(window).load(function () {
     loader_dat_create();
     $(window).trigger('resize');
 });
+window.addEventListener(orientationEvent, function() {
+    loader_dat_update();
+}, false);
 //#####################################
 var loader_active = false;
 var loader_sleep = 15;
@@ -67,13 +70,24 @@ function loader_ani_create(){
 function loader_dat_create() {
     var x = '<dl id="loaderdata"></dl>';
     $('#b').html($('#b').html()+x);
-    base_data_to_call[base_data_to_call.length] = 'loader_dat_update';
 }
 function loader_dat_update() {
+    var data_all = [base_data,base_mobile_device_orientation()];
     var x = "";
-    x = x + '<dt>IP Address:</dt><dd>'+base_data['ip']+'</dd>';
-    x = x + '<dt>Mobile Dev:</dt><dd>'+base_data['is_mobile']+'</dd>';
+
+    for(var i = 0; i<data_all.length;i++){
+        $.each(data_all[i], function( index, value ) {
+            x = x + '<dt>'+index+':</dt><dd>'+value+'</dd>';
+        });
+    }
     $('#loaderdata').html(x);
+}
+function loader_dat_get(arr) {
+    for(var i = 0; i<arr.length;i++){
+        $.each(arr[i], function( index, value ) {
+            console.log(index+" "+value);
+        });
+    }
 }
 //#####################################
 var loader_loop = setInterval(function () {
@@ -94,6 +108,10 @@ var loader_loop = setInterval(function () {
             }
         }
 
+        //base_rotate(loader_sturbles[i]['id'],loader_sturbles[i]['currot'],"");
         base_rotate_old(loader_sturbles[i]['id'],loader_sturbles[i]['currot']);
     }
 },loader_sleep);
+var test = setInterval(function () {
+    loader_dat_update();
+},50);
