@@ -81,10 +81,10 @@ function base_request_ip() {
     });
 }
 function base_mouse_pos() {
-    var pos = [];
+    var pos = {};
     var e = window.event;
-    pos[0] = e.clientX;
-    pos[1] = e.clientY;
+    pos['x'] = e.clientX;
+    pos['y'] = e.clientY;
     return pos;
 }
 //#########old##########
