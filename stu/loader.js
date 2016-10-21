@@ -7,9 +7,6 @@ $(window).load(function () {
     loader_dat_create();
     $(window).trigger('resize');
 });
-window.addEventListener(orientationEvent, function() {
-    loader_dat_update();
-}, false);
 //#####################################
 var loader_active = false;
 var loader_sleep = 15;
@@ -72,12 +69,21 @@ function loader_dat_create() {
     $('#b').html($('#b').html()+x);
 }
 function loader_dat_update() {
-    var data_all = [base_data,base_mobile_device_orientation()];
+    var data_all = [base_data];
     var x = "";
 
     for(var i = 0; i<data_all.length;i++){
         $.each(data_all[i], function( index, value ) {
-            x = x + '<dt>'+index+':</dt><dd>'+value+'</dd>';
+            x = x + '<dt>'+index+':</dt><dd>';
+            if(typeof(value) == typeof({})){
+                $.each(value,function (index2,value2) {
+                    x = x + index2+":"+value2+";";
+                });
+                x = x + '</dd>';
+            }
+            else{
+                x = x + value+'</dd>';
+            }
         });
     }
     $('#loaderdata').html(x);

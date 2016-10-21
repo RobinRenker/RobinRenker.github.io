@@ -13,6 +13,17 @@ $(window).load(function(){
 $(window).load(function(){
     base_request_ip();
 });
+if (window.DeviceOrientationEvent) {
+    window.addEventListener('deviceorientation', function(eventData) {
+        var ret = {};
+        ret['alpha'] = parseInt(eventData.alpha);
+        // beta is the front-to-back tilt in degrees
+        ret['beta'] = parseInt(eventData.beta);
+        // gamma is the left-to-right tilt in degrees
+        ret['gamma'] = parseInt(eventData.gamma);
+        base_data['mobile_orientation'] = ret;
+    }, false);
+}
 /*#####################################################*/
 var base_data = {
     'ip':'none',
@@ -74,21 +85,6 @@ function base_mouse_pos() {
     pos[0] = e.clientX;
     pos[1] = e.clientY;
     return pos;
-}
-function base_mobile_device_orientation() {
-    var ret = {};
-    if (window.DeviceOrientationEvent) {
-        window.addEventListener('deviceorientation', function(eventData) {
-            //
-            ret['alpha'] = parseInt(eventData.alpha);
-            // beta is the front-to-back tilt in degrees
-            ret['beta'] = parseInt(eventData.beta);
-            // gamma is the left-to-right tilt in degrees
-            ret['gamma'] = parseInt(eventData.gamma);
-
-        }, false);
-    }
-    return ret;
 }
 //#########old##########
 //window[string]();
