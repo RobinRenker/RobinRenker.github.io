@@ -6,7 +6,7 @@ $(window).load(function(){
         mirror_data['listen_on'] = 'mouse';
     }
 });
-$('#b').mousemove(function(){
+$(window).mousemove(function(){
     if(mirror_data['listen_on'] == 'mouse'){
         mirror_update_all(base_mouse_pos());
     }
@@ -38,13 +38,18 @@ function mirror_update_all(obj){
     });
 }
 function mirror_update_mouse(el,obj){
-
+    var elpos = base_element_pos(el);
+    var distance_to_el = 0;
+    var diff = [
+        obj['x']-(elpos['left']($('#'+el.width()/2))),
+        obj['y']-(elpos['top']+($('#'+el).height()/2))
+    ];
 }
 function mirror_update_mobile(el,obj){
-    base_rotate(el,mirror_pos_chop(base_data['mobile_start_orientation']['beta']-obj['beta']),'x');
-    base_rotate(el,mirror_pos_chop(base_data['mobile_start_orientation']['gamma']-obj['gamma']),'y');
+    base_rotate(el,mirror_update_mobile_chop(base_data['mobile_start_orientation']['beta']-obj['beta']),'x');
+    base_rotate(el,mirror_update_mobile_chop(base_data['mobile_start_orientation']['gamma']-obj['gamma']),'y');
 }
-function mirror_pos_chop(val){
+function mirror_update_mobile_chop(val){
     if(val > mirror_data['max_degree']){
         val = mirror_data['max_degree'];
     }

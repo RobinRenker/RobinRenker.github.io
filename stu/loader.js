@@ -52,7 +52,7 @@ function loader_resize(){
 }
 function loader_ani_create(){
     loader_active = true;
-    var lo = ['<div id="loader"><div id="loader_wr" class="mirror">','</div></div>'];
+    var lo = ['<div id="loader"><div id="loader_wr">','</div></div>'];
 
     for(var i = 0; i < loader_sturbles.length;i++){
         loader_sturbles[i]['id'] = "sturb_"+i;
