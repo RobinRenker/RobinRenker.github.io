@@ -2,105 +2,125 @@
  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
  <g>
   <title>background</title>
-  <rect fill="#d3d3d3" id="canvas_background" height="1002" width="702" y="-1" x="-1"/>
+  <rect fill="#FFF" id="canvas_background" height="1002" width="702" y="-1" x="-1"/>
   <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
    <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
   </g>
  </g>
  <g>
-  <title>Layer 1</title>
-  <!--<path d="M0 0 L0 0 L0 0 Z"  fill="#1abc9c" stroke="#000000" stroke-width="2" />-->
-
-  <path d="M125 175 L164 88 L228 162 Z"  fill="#1abc9c" stroke="#000000" stroke-width="2" />
-  <path d="M164 88 L228 162 L206 62 Z"  fill="#1abc9c" stroke="#000000" stroke-width="2" />
-  <path d="M260 42 L228 162 L206 62 Z"  fill="#1abc9c" stroke="#000000" stroke-width="2" />
-  <path d="M260 42 L228 162 L320 32 Z"  fill="#1abc9c" stroke="#000000" stroke-width="2" />
-  <path d="M368 170 L228 162 L320 32 Z"  fill="#1abc9c" stroke="#000000" stroke-width="2" />
-  <path d="M368 170 L388 18 L320 32 Z"  fill="#1abc9c" stroke="#000000" stroke-width="2" />
-  <path d="M368 170 L388 18 L450 32 Z"  fill="#1abc9c" stroke="#000000" stroke-width="2" />
-  <path d="M368 170 L496 198 L450 32 Z"  fill="#1abc9c" stroke="#000000" stroke-width="2" />
-  <path d="M518 48 L496 198 L450 32 Z"  fill="#1abc9c" stroke="#000000" stroke-width="2" />
-  <path d="M518 48 L496 198 L572 74 Z"  fill="#1abc9c" stroke="#000000" stroke-width="2" />
-  <path d="M630 100 L496 198 L572 74 Z"  fill="#1abc9c" stroke="#000000" stroke-width="2" />
-  <path d="M630 100 L496 198 L588 240 Z"  fill="#1abc9c" stroke="#000000" stroke-width="2" />
-  <path d="M630 100 L670 170 L588 240 Z"  fill="#1abc9c" stroke="#000000" stroke-width="2" />
-  <path d="M648 306 L670 170 L588 240 Z"  fill="#1abc9c" stroke="#000000" stroke-width="2" />
-  <path d="M648 306 L670 170 L696 250 Z"  fill="#1abc9c" stroke="#000000" stroke-width="2" />
-  <path d="M648 306 L694 352 L696 250 Z"  fill="#1abc9c" stroke="#000000" stroke-width="2" />
-  <path d="M648 306 L694 352 L676 400 Z"  fill="#1abc9c" stroke="#000000" stroke-width="2" />
-
-
-
-  <!--
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_23" y2="176.5" x2="124.5" y1="162.5" x1="228.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_13" y2="170.5" x2="130.5" y1="88.5" x1="164.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_12" y2="90.5" x2="166.5" y1="62.5" x1="206.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_2" y2="42.5" x2="260.5" y1="64.5" x1="208.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="32.5" x2="320.5" y1="40.5" x1="258.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_22" y2="164.5" x2="234.5" y1="170.5" x1="368.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_4" y2="18.5" x2="388.5" y1="30.5" x1="320.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_5" y2="32.5" x2="450.5" y1="18.5" x1="384.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_21" y2="172.5" x2="372.5" y1="198.5" x1="496.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_7" y2="48.5" x2="518.5" y1="30.5" x1="448.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_9" y2="74.5" x2="572.5" y1="46.5" x1="518.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_10" y2="100.5" x2="630.5" y1="72.5" x1="572.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_20" y2="200.5" x2="498.5" y1="240.5" x1="588.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_11" y2="170.5" x2="670.5" y1="100.5" x1="630.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_19" y2="242.5" x2="592.5" y1="306.5" x1="648.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_14" y2="250.5" x2="696.5" y1="170.5" x1="670.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_15" y2="352.5" x2="694.5" y1="248.5" x1="696.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_16" y2="400.5" x2="676.5" y1="350.5" x1="690.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_17" y2="310.5" x2="648.5" y1="396.5" x1="676.5" stroke-width="1.5" stroke="#000" fill="none"/>
-
-
-
-
-  -->
-
-
-
-
-
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_24" y2="206.5" x2="48.5" y1="174.5" x1="116.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_26" y2="250.5" x2="24.5" y1="208.5" x1="46.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_28" y2="322.5" x2="50.5" y1="252.5" x1="22.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_29" y2="376.5" x2="90.5" y1="324.5" x1="52.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_30" y2="308.5" x2="160.5" y1="372.5" x1="92.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_31" y2="272.5" x2="260.5" y1="308.5" x1="162.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_33" y2="268.5" x2="382.5" y1="270.5" x1="260.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_34" y2="296.5" x2="500.5" y1="268.5" x1="382.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_35" y2="338.5" x2="588.5" y1="298.5" x1="502.5" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_37" y2="398.5" x2="674.5" y1="338.5" x1="588.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_39" y2="522.5" x2="642.5" y1="400.5" x1="674.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_40" y2="606.5" x2="604.5" y1="522.5" x1="642.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_41" y2="710.5" x2="562.5" y1="608.5" x1="602.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_42" y2="820.5" x2="520.5" y1="716.5" x1="558.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_43" y2="872.5" x2="484.5" y1="818.5" x1="518.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_44" y2="912.5" x2="406.5" y1="872.5" x1="478.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_47" y2="914.5" x2="320.5" y1="912.5" x1="402.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_48" y2="876.499999" x2="232.499999" y1="912.5" x1="318.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_49" y2="450.5" x2="110.5" y1="380.5" x1="90.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_50" y2="544.5" x2="104.5" y1="450.5" x1="110.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_51" y2="640.5" x2="106.5" y1="548.5" x1="102.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_53" y2="734.5" x2="116.5" y1="638.5" x1="106.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_54" y2="808.5" x2="154.5" y1="736.5" x1="116.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_55" y2="876.5" x2="232.5" y1="808.5" x1="154.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_56" y2="396.5" x2="58.5" y1="408.5" x1="92.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_57" y2="442.5" x2="34.5" y1="394.5" x1="54.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_59" y2="564.5" x2="42.5" y1="444.5" x1="30.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_61" y2="624.5" x2="100.5" y1="568.5" x1="40.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_62" y2="538.5" x2="658.5" y1="524.5" x1="642.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_63" y2="638.5" x2="640.5" y1="540.5" x1="658.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_65" y2="708.5" x2="608.5" y1="636.5" x1="640.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_66" y2="728.5" x2="556.5" y1="706.5" x1="610.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_72" y2="452.666666" x2="148.5" y1="504.666666" x1="108.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_73" y2="370.666666" x2="164.5" y1="448.666666" x1="146.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_75" y2="474.666666" x2="612.5" y1="592.666666" x1="606.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-  <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_79" y2="292.666668" x2="226.499994" y1="368.66667" x1="166.500001" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
-  <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_81" y2="370.666661" x2="500.499998" y1="402.666659" x1="602.500002" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
-  <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_82" y2="302.666668" x2="394.499998" y1="368.666665" x1="498.499999" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
-  <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_83" y2="398.666665" x2="598.5" y1="470.66667" x1="612.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
-  <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_84" y2="282.666665" x2="294.5" y1="302.666666" x1="392.500004" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
-  <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_86" y2="282.666663" x2="294.499998" y1="292.666663" x1="228.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
+  <!--####################################################################################-->
+  <!--Top hat-->
+  <path d="M125 175 L164 88 L228 162 Z"  fill="#666666" stroke="#000000" stroke-width="2" />
+  <path d="M164 88 L228 162 L206 62 Z"  fill="#666666" stroke="#000000" stroke-width="2" />
+  <path d="M260 42 L228 162 L206 62 Z"  fill="#666666" stroke="#000000" stroke-width="2" />
+  <path d="M260 42 L228 162 L320 32 Z"  fill="#666666" stroke="#000000" stroke-width="2" />
+  <path d="M368 170 L228 162 L320 32 Z"  fill="#666666" stroke="#000000" stroke-width="2" />
+  <path d="M368 170 L388 18 L320 32 Z"  fill="#666666" stroke="#000000" stroke-width="2" />
+  <path d="M368 170 L388 18 L450 32 Z"  fill="#666666" stroke="#000000" stroke-width="2" />
+  <path d="M368 170 L496 198 L450 32 Z"  fill="#666666" stroke="#000000" stroke-width="2" />
+  <path d="M518 48 L496 198 L450 32 Z"  fill="#666666" stroke="#000000" stroke-width="2" />
+  <path d="M518 48 L496 198 L572 74 Z"  fill="#666666" stroke="#000000" stroke-width="2" />
+  <path d="M630 100 L496 198 L572 74 Z"  fill="#666666" stroke="#000000" stroke-width="2" />
+  <path d="M630 100 L496 198 L588 240 Z"  fill="#666666" stroke="#000000" stroke-width="2" />
+  <path d="M630 100 L670 170 L588 240 Z"  fill="#666666" stroke="#000000" stroke-width="2" />
+  <path d="M648 306 L670 170 L588 240 Z"  fill="#666666" stroke="#000000" stroke-width="2" />
+  <path d="M648 306 L670 170 L696 250 Z"  fill="#666666" stroke="#000000" stroke-width="2" />
+  <path d="M648 306 L694 352 L696 250 Z"  fill="#666666" stroke="#000000" stroke-width="2" />
+  <path d="M648 306 L694 352 L676 400 Z"  fill="#666666" stroke="#000000" stroke-width="2" />
+  <!--####################################################################################-->
+  <!--Bottom hat-->
+  <path d="M91 374 L160 308 L52 324 Z"  fill="#7f7f7f" stroke="#000000" stroke-width="2" />
+  <path d="M22 252 L160 308 L52 324 Z"  fill="#7f7f7f" stroke="#000000" stroke-width="2" />
+  <path d="M22 252 L160 308 L46 208 Z"  fill="#7f7f7f" stroke="#000000" stroke-width="2" />
+  <path d="M125 175 L160 308 L46 208 Z"  fill="#7f7f7f" stroke="#000000" stroke-width="2" />
+  <path d="M125 175 L160 308 L228 162 Z"  fill="#7f7f7f" stroke="#000000" stroke-width="2" />
+  <path d="M260 272 L160 308 L228 162 Z"  fill="#7f7f7f" stroke="#000000" stroke-width="2" />
+  <path d="M260 272 L368 170 L228 162 Z"  fill="#7f7f7f" stroke="#000000" stroke-width="2" />
+  <path d="M260 272 L368 170 L382 268 Z"  fill="#7f7f7f" stroke="#000000" stroke-width="2" />
+  <path d="M496 198 L368 170 L382 268 Z"  fill="#7f7f7f" stroke="#000000" stroke-width="2" />
+  <path d="M496 198 L500 296 L382 268 Z"  fill="#7f7f7f" stroke="#000000" stroke-width="2" />
+  <path d="M496 198 L500 296 L588 240 Z"  fill="#7f7f7f" stroke="#000000" stroke-width="2" />
+  <path d="M588 338 L500 296 L588 240 Z"  fill="#7f7f7f" stroke="#000000" stroke-width="2" />
+  <path d="M588 338 L648 306 L588 240 Z"  fill="#7f7f7f" stroke="#000000" stroke-width="2" />
+  <path d="M588 338 L648 306 L676 400 Z"  fill="#7f7f7f" stroke="#000000" stroke-width="2" />
+  <!--####################################################################################-->
+  <!--Hair-->
+  <path d="M91 374 L160 308 L164 370 Z"  fill="#FF0000" stroke="#000000" stroke-width="2" />
+  <path d="M91 374 L146 448 L164 370 Z"  fill="#FF0000" stroke="#000000" stroke-width="2" />
+  <path d="M91 374 L146 448 L110 450 Z"  fill="#FF0000" stroke="#000000" stroke-width="2" />
+  <path d="M108 504 L146 448 L110 450 Z"  fill="#FF0000" stroke="#000000" stroke-width="2" />
+  <path d="M226 292 L160 308 L164 370 Z"  fill="#FF0000" stroke="#000000" stroke-width="2" />
+  <path d="M226 292 L160 308 L260 272 Z"  fill="#FF0000" stroke="#000000" stroke-width="2" />
+  <path d="M226 292 L294 282 L260 272 Z"  fill="#FF0000" stroke="#000000" stroke-width="2" />
+  <path d="M382 268 L294 282 L260 272 Z"  fill="#FF0000" stroke="#000000" stroke-width="2" />
+  <path d="M382 268 L294 282 L392 302 Z"  fill="#FF0000" stroke="#000000" stroke-width="2" />
+  <path d="M382 268 L500 296 L392 302 Z"  fill="#FF0000" stroke="#000000" stroke-width="2" />
+  <path d="M498 368 L500 296 L392 302 Z"  fill="#FF0000" stroke="#000000" stroke-width="2" />
+  <path d="M498 368 L500 296 L588 338 Z"  fill="#FF0000" stroke="#000000" stroke-width="2" />
+  <path d="M498 368 L602 402 L588 338 Z"  fill="#FF0000" stroke="#000000" stroke-width="2" />
+  <path d="M676 400 L602 402 L588 338 Z"  fill="#FF0000" stroke="#000000" stroke-width="2" />
+  <path d="M676 400 L602 402 L612 470 Z"  fill="#FF0000" stroke="#000000" stroke-width="2" />
+  <path d="M676 400 L642 522 L612 470 Z"  fill="#FF0000" stroke="#000000" stroke-width="2" />
+  <path d="M604 606 L642 522 L612 470 Z"  fill="#FF0000" stroke="#000000" stroke-width="2" />
+  <!--####################################################################################-->
+  <!--Ear Left-->
+  <path d="M58 396 L110 450 L99 405 Z"  fill="#ffff00" stroke="#000000" stroke-width="2" />
+  <path d="M58 396 L110 450 L34 442 Z"  fill="#ffff00" stroke="#000000" stroke-width="2" />
+  <path d="M110 450 L108 504 L34 442 Z"  fill="#ffff00" stroke="#000000" stroke-width="2" />
+  <path d="M42 564 L108 504 L34 442 Z"  fill="#ffff00" stroke="#000000" stroke-width="2" />
+  <path d="M42 564 L108 504 L104 544 Z"  fill="#ffff00" stroke="#000000" stroke-width="2" />
+  <path d="M42 564 L106 624 L104 544 Z"  fill="#ffff00" stroke="#000000" stroke-width="2" />
+  <!--####################################################################################-->
+  <!--Ear Right-->
+  <path d="M604 606 L642 522 L658 538 Z"  fill="#ffff00" stroke="#000000" stroke-width="2" />
+  <path d="M604 606 L640 638 L658 538 Z"  fill="#ffff00" stroke="#000000" stroke-width="2" />
+  <path d="M604 606 L640 638 L608 708 Z"  fill="#ffff00" stroke="#000000" stroke-width="2" />
+  <path d="M604 606 L556 728 L608 708 Z"  fill="#ffff00" stroke="#000000" stroke-width="2" />
+  <!--####################################################################################-->
+  <!--Face-->
+  <path d="M226 292 L243 389 L164 370 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M226 292 L243 389 L294 282 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M146 448 L243 389 L164 370 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M146 448 L243 389 L199 541 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M146 448 L108 504 L199 541 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M104 544 L108 504 L199 541 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M104 544 L106 624 L199 541 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M337 479 L243 389 L199 541 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M265 631 L106 624 L199 541 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M265 631 L337 479 L199 541 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M265 631 L337 479 L411 559 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M497 457 L337 479 L411 559 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M497 457 L337 479 L337 379 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M243 389 L337 479 L337 379 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M243 389 L294 282 L337 379 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M392 302 L294 282 L337 379 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M392 302 L498 368 L337 379 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M497 457 L498 368 L337 379 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M497 457 L498 368 L602 402 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M497 457 L612 470 L602 402 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M497 457 L612 470 L604 606 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M497 457 L493 545 L604 606 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M497 457 L493 545 L411 559 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M459 625 L493 545 L604 606 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M459 625 L556 728 L604 606 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M459 625 L556 728 L437 721 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M425 807 L556 728 L437 721 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M425 807 L556 728 L520 820 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M425 807 L481 871 L520 820 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M425 807 L481 871 L406 912 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M425 807 L321 913 L406 912 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M425 807 L321 913 L273 739 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M425 807 L265 631 L273 739 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M425 807 L265 631 L437 721 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M459 625 L265 631 L437 721 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M459 625 L265 631 L411 559 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M459 625 L493 545 L411 559 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M232 876 L321 913 L273 739 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M232 876 L154 808 L273 739 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M219 733 L154 808 L273 739 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M219 733 L154 808 L116 736 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M219 733 L106 624 L116 736 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M219 733 L106 624 L265 631 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
+  <path d="M219 733 L273 739 L265 631 Z"  fill="#0000FF" stroke="#000000" stroke-width="2" />
  </g>
 </svg>
