@@ -96,5 +96,7 @@ function base_element_pos(el) {
     ret['bottom'] = p.bottom;
     return ret;
 }
-//#########old##########
-//window[string]();
+function base_call(name) {
+    window[name]();
+}
+
