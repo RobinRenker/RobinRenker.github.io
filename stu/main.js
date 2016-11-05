@@ -40,13 +40,11 @@ function main_resize() {
             .width("100%")
             .height("30%");
         if($('#b_cap').width() > $('#b_cap').height()*0.7){
-            console.log('width auto');
             $('#b_cap_img')
                 .height('100%')
                 .width('auto');
         }
         else{
-            console.log('height auto');
             $('#b_cap_img')
                 .height('auto')
                 .width('100%');
