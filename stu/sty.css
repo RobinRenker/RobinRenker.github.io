@@ -2,10 +2,13 @@
     --cap-color1: #E7E719;
     --cap-color2: #731164;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 body{
     padding: 0;
     margin:0;
-    background-color: var(--cap-color1);
+    background-color: #E7E719;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -22,12 +25,15 @@ body{
 #b_cap{
     float: left;
 }
+#b_cap_img{
+    margin:0px auto;
+}
 #b_text{
     float: left;
 }
 #b_text_p{
     font-family: sans-serif;
-    color: var(--cap-color2);
+    color: #731164;
     font-size: 15vmin;
     padding: 0;
     margin: 0;
