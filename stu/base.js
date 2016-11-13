@@ -99,4 +99,17 @@ function base_element_pos(el) {
 function base_call(name) {
     window[name]();
 }
+function base_array_clean(arr) {
+    var tmpA = new Array();
+    for(var i = 0; i < arr.length; i++){
+        if(arr[i] != undefined){
+            tmpA[tmpA.length] = arr[i];
+        }
+    }
+    return tmpA;
+}
+function base_array_delete(arr, n) {
+    arr[n] = undefined;
+    return base_array_clean(arr);
+}
 
