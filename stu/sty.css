@@ -1,7 +1,3 @@
-:root {
-    --cap-color1: #E7E719;
-    --cap-color2: #731164;
-}
 ::-webkit-scrollbar {
     display: none;
 }
@@ -12,10 +8,9 @@
 body{
     padding: 0;
     margin:0;
+    width: 100vw;
+    height: 100vh;
     background-color: #E7E719;
-    position: absolute;
-    width: 100%;
-    height: 100%;
 }
 .no_select {
      -webkit-touch-callout: none;
@@ -26,22 +21,38 @@ body{
      user-select: none;
  }
 /*################################################################*/
-#b_cap{
+.b_child{
     float: left;
+    overflow: hidden;
+    margin: 2vh 2vw;
 }
-#b_cap_img{
-    margin:0px auto;
-    max-width: 100%;
-    max-height: 100%;
+.contvert{
+    width: 46vw;
+    height: 96vh;
+}
+.conthor2{
+    width: 96vw;
+    height: 26vh;
+}
+.conthor1{
+    width: 96vw;
+    height: 66vh;
 }
 #b_text{
-    float: left;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
-#b_text_p{
+#b_text > p{
     font-family: basefont,sans-serif;
     color: #731164;
     font-size: 15vmin;
     padding: 0;
     margin: 0;
-    text-align: center;
+}
+#b_cap{
+    background-image: url('cap.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
