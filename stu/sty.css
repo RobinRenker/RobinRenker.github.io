@@ -26,18 +26,6 @@ body{
     overflow: hidden;
     margin: 2vh 2vw;
 }
-.contvert{
-    width: 46vw;
-    height: 96vh;
-}
-.conthor2{
-    width: 96vw;
-    height: 26vh;
-}
-.conthor1{
-    width: 96vw;
-    height: 66vh;
-}
 #b_text{
     justify-content: center;
     display: flex;
@@ -55,4 +43,24 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+}
+@media (max-aspect-ratio: 4/4){
+    #b_cap{
+        width: 96vw;
+        height: 66vh;
+    }
+    #b_text{
+        width: 96vw;
+        height: 26vh;
+    }
+}
+@media (min-aspect-ratio: 4/4){
+    #b_cap{
+        width: 46vw;
+        height: 96vh;
+    }
+    #b_text{
+        width: 46vw;
+        height: 96vh;
+    }
 }
