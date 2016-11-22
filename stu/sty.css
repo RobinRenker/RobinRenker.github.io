@@ -28,14 +28,24 @@ body{
 /*################################################################*/
 #b_cap{
     float: left;
+    overflow: hidden;
 }
 #b_cap_img{
-    margin:0px auto;
+    overflow: hidden;
     max-width: 100%;
     max-height: 100%;
 }
 #b_text{
     float: left;
+    overflow: hidden;
+}
+.contvert{
+    width: 50vw;
+    height: 100vh;
+}
+.conthor{
+    width: 100vw;
+    height: 50vh;
 }
 #b_text_p{
     font-family: basefont,sans-serif;
