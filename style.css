@@ -18,11 +18,11 @@ html,body{
 }
 .back{
     overflow: hidden;
-    background-image: url("sunset.jpg");
+    background-image: url("a/sunset.jpg");
     background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
-    filter: blur(5px);
+    /*filter: blur(5px);*/
     transform: scale(1.1); /*so there is no white border caused by the blur*/
 }
 .cont{
@@ -64,31 +64,122 @@ html,body{
 .imag:hover{
     transform: scale(1.05);
 }
+/*########################################*/
 /*### Head*/
-.cont.head h1{
+.head h1{
     width: 100%;
     text-align: center;
 }
-.cont.head .doscroll{
+.head .doscroll{
     border-bottom: 40px solid #FFFFFF;
 }
 /*### Pers*/
-.cont.pers{
+.pers{
     background-color: #FFFFFF;
 }
-.cont.pers .doscroll{
-    border-bottom: 40px solid red;
+.pers .doscroll{
+    border-bottom: 40px solid #A34B4B;
 }
-.cont.pers .imag{
+.pers .imag{
     margin: 5%;
     width: 90%;
     height: 90%;
-    background-image: url("me.svg");
+    background-image: url("a/me.svg");
     background-position: center;
     background-repeat:no-repeat;
     background-size: contain;
 }
-/*### Skil*/
-.cont.skil{
-    background-color: red;
+.pers p{
+    max-width: 90%;
+    text-align: center;
+}
+.pers p:after{
+    animation-name: pers;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    content: 'Me?';
+}
+/*### Drone*/
+.dron{
+    background-color: #A34B4B;
+    display: flex;
+}
+.dron .doscroll{
+    border-bottom: 40px solid #4B4C4E;
+}
+.dron .compass{
+    width: 50vmin;
+    height: 50vmin;
+
+    background-image: url("a/cface.svg");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+.dron .compass .pointer{
+    margin: 0 auto;
+    width: 20%;
+    height: 100%;
+    background-image: url("a/cpointer.svg");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: contain;
+
+    animation-name: compass;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.dron .frame{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 20px;
+    border: solid 10px #ECE4A5;
+    box-sizing: border-box;
+    padding: 42px 0;
+}
+.dron .spike{
+    border-bottom: 40px solid #A34B4B;
+    bottom: 20px;
+}
+/*
+.dron .imag{
+    margin: 5%;
+    width: 90%;
+    height: 90%;
+    background-image: url("a/fpv.jpg");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+
+    width: 45vw;
+    height: 90vh;
+    max-height: 45vw;
+    max-width: 90vh;
+}
+@media (orientation: portrait){
+    .dron .imag{
+        width: 90vw;
+        height: 45vh;
+        max-height: 90vw;
+        max-width: 45vh;
+    }
+}
+*/
+/*### Work*/
+.work{
+    background-color: #4B4C4E;
+}
+/*########################################*/
+@keyframes pers {
+    0% {content: "My name is Robin Renker, I am a suisse computer scientist who happens to have red hair."}
+    50% {content: "I like breathing"}
+    100% {content: "My name is Robin Renker, I am a suisse computer scientist who happens to have red hair."}
+}
+@keyframes compass {
+    0% {transform: rotate(0deg);}
+    30% {transform: rotate(250deg);}
+    70% {transform: rotate(60deg);}
+    100% {transform: rotate(360deg);}
 }
