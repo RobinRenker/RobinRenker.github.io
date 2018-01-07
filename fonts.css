@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Lobster');
+
+/*
+
+    font-base - 16px
+
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Lobster', cursive;
+
+    beige - #ECE4A5
+    redish - #A34B4B
+    pink - #ba0381 - #EE7ACF
+    green - #5b9367
+    turq - #62B6A0
+    purp - #6c3291
+*/
+
+h1 {
+    font-size: 96px;
+    font-family: 'Lobster', "Comic Sans MS", sans-serif;
+}
+
+p {
+    font-size: 48px;
+    font-family: 'Lobster Two', "Comic Sans MS", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 64px;
+    }
+    p {
+        font-size: 32px;
+    }
+}
+
+.t_m h1{
+    color: #FFFFFF;
+    text-shadow: 3px 3px #6c3291;
+}
+.t_m p{
+    color: #6c3291;
+}
+.t_v h1{
+    color: #ECE4A5;
+}
+.t_v p{
+    color: #ECE4A5;
+}
