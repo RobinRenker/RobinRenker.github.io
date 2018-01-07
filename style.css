@@ -7,6 +7,9 @@ html,body{
     position: relative;
     overflow: hidden;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 .fly{
     display: block;
     top:0;
@@ -14,7 +17,8 @@ html,body{
     width: 100%;
     position: absolute;
     height: 100%;
-    overflow: scroll;
+    overflow:scroll;
+    overflow-x: hidden;
 }
 .back{
     overflow: hidden;
@@ -96,8 +100,8 @@ html,body{
 .pers p:after{
     animation-name: pers;
     animation-iteration-count: infinite;
-    animation-duration: 20s;
-    content: 'Me?';
+    animation-duration: 14s;
+    content: 'My name is Robin Renker, I am a suisse computer scientist who happens to have red hair.';
 }
 /*### Drone*/
 .dron{
@@ -108,16 +112,19 @@ html,body{
     border-bottom: 40px solid #4B4C4E;
 }
 .dron .compass{
-    width: 50vmin;
-    height: 50vmin;
-
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    position: relative;
     background-image: url("a/cface.svg");
     background-position: center;
     background-repeat:no-repeat;
     background-size: contain;
 }
 .dron .compass .pointer{
-    margin: 0 auto;
+    position: absolute;
+    left: 40%;
+    top: 0;
     width: 20%;
     height: 100%;
     background-image: url("a/cpointer.svg");
@@ -142,40 +149,14 @@ html,body{
     border-bottom: 40px solid #A34B4B;
     bottom: 20px;
 }
-/*
-.dron .imag{
-    margin: 5%;
-    width: 90%;
-    height: 90%;
-    background-image: url("a/fpv.jpg");
-    background-position: center;
-    background-repeat:no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-
-    width: 45vw;
-    height: 90vh;
-    max-height: 45vw;
-    max-width: 90vh;
-}
-@media (orientation: portrait){
-    .dron .imag{
-        width: 90vw;
-        height: 45vh;
-        max-height: 90vw;
-        max-width: 45vh;
-    }
-}
-*/
 /*### Work*/
 .work{
     background-color: #4B4C4E;
 }
 /*########################################*/
 @keyframes pers {
-    0% {content: "My name is Robin Renker, I am a suisse computer scientist who happens to have red hair."}
-    50% {content: "I like breathing"}
-    100% {content: "My name is Robin Renker, I am a suisse computer scientist who happens to have red hair."}
+    50% {content: "I like breathing, talking to trees and all that other ordinary stuff."}
+
 }
 @keyframes compass {
     0% {transform: rotate(0deg);}
