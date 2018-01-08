@@ -18,11 +18,15 @@
 h1 {
     font-size: 96px;
     font-family: 'Lobster', "Comic Sans MS", sans-serif;
+    width: 100%;
+    text-align: center;
 }
 
 p {
     font-size: 48px;
     font-family: 'Lobster Two', "Comic Sans MS", sans-serif;
+    width: 100%;
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {
