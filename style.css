@@ -173,7 +173,7 @@ html,body{
     position: absolute;
 }
 .dron .space .corner:nth-child(2){
-    left:initial;
+    left:auto;
     right: -10px;
     transform: rotate(90deg);
 }
