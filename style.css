@@ -207,6 +207,7 @@ html,body{
     background-color: #A34B4B;
     left:10px;
     top:10px;
+    transform: scale(1.01); /*fix antialiasing fails*/
 }
 .dron .space .corner:nth-child(2){
     left:auto;
