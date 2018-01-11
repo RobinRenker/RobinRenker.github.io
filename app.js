@@ -25,12 +25,41 @@ function animScr(el,aim,dur,speed) {
         }
     },10);
 }
+function checkClipPath() {
+    var base = 'clipPath',
+        prefixes = [ 'webkit', 'moz', 'ms', 'o' ],
+        properties = [ base ],
+        testElement = document.createElement( 'testelement' ),
+        attribute = 'polygon(50% 0%, 0% 100%, 100% 100%)';
+
+    for ( var i = 0, l = prefixes.length; i < l; i++ ) {
+        var prefixedProperty = prefixes[i] + base.charAt( 0 ).toUpperCase() + base.slice( 1 ); // remember to capitalize!
+        properties.push( prefixedProperty );
+    }
+    for ( var i = 0, l = properties.length; i < l; i++ ) {
+        var property = properties[i];
+        if ( testElement.style[property] === '' ) {
+            testElement.style[property] = attribute;
+            if ( testElement.style[property] === '' ) {
+                var elements = document.getElementsByClassName("glitch");
+                for (var y = 0; y < 4; y++) {
+                    elements[0].className = "";
+                }
+            }
+        }
+    }
+}
 //###################
 document.getElementsByClassName('fly')[1].addEventListener("scroll", function () {
     clearTimeout(scrCorTim);
     scrCorTim = setTimeout(function () {
         var el = document.getElementsByClassName("fly")[1];
         var aim = Math.round(el.scrollTop / window.innerHeight)*window.innerHeight;
-        animScr(el,aim,null,8);
-    },1000);
+        var maxdif = window.innerHeight*0.2;
+        if(el.scrollTop - aim < maxdif && el.scrollTop - aim > -maxdif){
+            animScr(el,aim,null,8);
+        }
+    },500);
 });
+//###################
+checkClipPath();

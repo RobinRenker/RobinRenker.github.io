@@ -75,12 +75,9 @@ html,body{
     position: absolute;
     top: -5px;
     left: -10px;
-    width: calc(100% + 20px);
-    height: calc(100% + 10px);
+    width: calc(100% + 20px) !important;
+    height: calc(100% + 10px) !important;
     transform: translate3d(0,0,0);
-    background-position: center;
-    background-repeat:no-repeat;
-    background-size: contain;
 }
 .glitch:nth-child(n+2) {
     opacity: 0;
@@ -122,8 +119,13 @@ html,body{
     width: 90%;
     height: 90%;
 }
-.pers .glitch{
+.pers .imag div{
     background-image: url("a/me.svg");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
 }
 .pers p{
     max-width: 90%;
@@ -191,6 +193,7 @@ html,body{
     top:-10px;
     left:-10px;
     overflow: hidden;
+    transform: scale(1.01); /*fix antialiasing fails*/
 }
 .dron .space .corner div{
     width: 100px;
@@ -207,7 +210,6 @@ html,body{
     background-color: #A34B4B;
     left:10px;
     top:10px;
-    transform: scale(1.01); /*fix antialiasing fails*/
 }
 .dron .space .corner:nth-child(2){
     left:auto;
