@@ -1,5 +1,3 @@
-var scrCorTim = null;
-//###################
 function scr(i) {
     animScr(document.getElementsByClassName("fly")[1],window.innerHeight*i,200,null);
 }
@@ -49,17 +47,5 @@ function checkClipPath() {
         }
     }
 }
-//###################
-document.getElementsByClassName('fly')[1].addEventListener("scroll", function () {
-    clearTimeout(scrCorTim);
-    scrCorTim = setTimeout(function () {
-        var el = document.getElementsByClassName("fly")[1];
-        var aim = Math.round(el.scrollTop / window.innerHeight)*window.innerHeight;
-        var maxdif = window.innerHeight*0.2;
-        if(el.scrollTop - aim < maxdif && el.scrollTop - aim > -maxdif){
-            animScr(el,aim,null,8);
-        }
-    },500);
-});
 //###################
 checkClipPath();
