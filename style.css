@@ -73,10 +73,6 @@ html,body{
 }
 .glitch{
     position: absolute;
-    top: -5px;
-    left: -10px;
-    width: calc(100% + 20px) !important;
-    height: calc(100% + 10px) !important;
     transform: translate3d(0,0,0);
 }
 .glitch:nth-child(n+2) {
