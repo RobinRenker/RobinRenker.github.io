@@ -58,10 +58,17 @@ document.getElementById("me").addEventListener("mouseleave",function () {
 window.addEventListener("wheel",scCo);
 window.addEventListener("touchmove",scCo);
 window.addEventListener("resize",scCo);
-
+//Scroll help
 var doscs = document.getElementsByClassName('doscroll');
 for(var i = 0; i < doscs.length; i++){
     doscs[i].onclick = function () {
         scTo(document.getElementsByClassName("fly")[1],this.className.split("ds_")[1]*window.innerHeight,200);
     }
 }
+//Title
+document.getElementById("title").onmouseover = function () {
+    document.title = "Renker Robin";
+};
+document.getElementById("title").onmouseout = function () {
+    document.title = "Robin Renker";
+};

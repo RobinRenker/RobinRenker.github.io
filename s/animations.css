@@ -1,8 +1,7 @@
-@keyframes pers {
-    50% {
-        content: "I like breathing, talking to trees and all that other ordinary stuff."
-    }
-
+@keyframes pers {50% {content: "I like breathing, talking to trees and all that other ordinary stuff."}}
+@keyframes blur {
+    0% {filter:blur(5px)}
+    100% {filter:blur(0px)}
 }
 @keyframes compass {
     0% {

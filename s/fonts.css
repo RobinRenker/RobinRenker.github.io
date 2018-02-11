@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster+Two|Lobster');
-
 h1 {
     font-size: 96px;
     font-family: 'Lobster', "Comic Sans MS", sans-serif;
     width: 100%;
     text-align: center;
+    cursor: default;
 }
 p {
     font-size: 48px;
@@ -13,12 +13,8 @@ p {
     text-align: center;
 }
 @media screen and (max-width: 600px) {
-    h1 {
-        font-size: 64px;
-    }
-    p {
-        font-size: 32px;
-    }
+    h1 {font-size: 64px;}
+    p {font-size: 32px;}
 }
 .t_m h1{
     color: #FFFFFF;
