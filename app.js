@@ -1,28 +1,3 @@
-function scr(i) {
-    animScr(document.getElementsByClassName("fly")[1],window.innerHeight*i,200,null);
-}
-function animScr(el,aim,dur,speed) {
-    if(dur != null){
-        speed = (aim - el.scrollTop)/(dur / 10);
-    }
-    var interval = setInterval(function () {
-        if(aim > el.scrollTop){
-            if(aim < el.scrollTop + speed){
-                el.scrollTop = aim;
-            } else {
-                el.scrollTop = el.scrollTop + speed;
-            }
-        } else if (aim < el.scrollTop) {
-            if(aim > el.scrollTop - speed){
-                el.scrollTop = aim;
-            } else {
-                el.scrollTop = el.scrollTop - speed;
-            }
-        } else {
-            clearInterval(interval);
-        }
-    },10);
-}
 function checkClipPath() {
     var base = 'clipPath',
         prefixes = [ 'webkit', 'moz', 'ms', 'o' ],
@@ -39,9 +14,10 @@ function checkClipPath() {
         if ( testElement.style[property] === '' ) {
             testElement.style[property] = attribute;
             if ( testElement.style[property] === '' ) {
+                console.log("no clippath support!");
                 var elements = document.getElementsByClassName("glitch");
-                for (var y = 0; y < 4; y++) {
-                    elements[0].className = "";
+                for (var y = 0; y < 3; y++) {
+                    elements[1].className = "";
                 }
             }
         }
@@ -49,3 +25,9 @@ function checkClipPath() {
 }
 //###################
 checkClipPath();
+document.getElementById("me").addEventListener("mouseenter",function () {
+    this.className = this.className + " anim";
+});
+document.getElementById("me").addEventListener("mouseleave",function () {
+    this.className = this.className.replace(" anim", "");
+});
