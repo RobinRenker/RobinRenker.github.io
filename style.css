@@ -51,7 +51,7 @@ html,body{
     border-right: 50px solid transparent;
     border-bottom: 40px solid;
     transform: translateY(1px);
-    /*cursor: pointer;*/
+    cursor: pointer;
 }
 .card{
     width: 100%;
@@ -106,7 +106,7 @@ html,body{
     text-align: center;
 }
 .head .doscroll{
-    border-bottom-color: #FFFFFF;
+    border-bottom-color: rgba(255,255,255,0.9);
 }
 
 
