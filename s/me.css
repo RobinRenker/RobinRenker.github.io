@@ -1,0 +1,51 @@
+/*### Me*/
+.me{
+    background-color: rgba(255,255,255,0.9);
+}
+
+.me .doscroll{
+    border-bottom-color: #A34B4B;
+}
+.me .imag{
+    position: relative;
+    margin: 5%;
+    width: 90%;
+    height: 85%; /*this should be 90% ... but somehow 85 + 2*5 equals 100*/
+}
+.me .imag .glitch{
+    background-image: url("../a/me.svg");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+.me .links{
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding:5%;
+}
+.me .links .link{
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.me .links .link:hover{
+    transform: scale(1.05);
+}
+.me p{
+    bottom: 0;
+    position: absolute;
+    margin: 5%;
+    width: 90%;
+    max-height: 90%;
+}
+.me p:after{
+    animation-name: pers;
+    animation-iteration-count: infinite;
+    animation-duration: 14s;
+    content: 'My name is Robin Renker, I am a swiss software dev who happens to have red hair.';
+}
