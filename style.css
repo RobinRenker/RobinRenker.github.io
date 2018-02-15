@@ -33,10 +33,6 @@ html,body{
     background-repeat:no-repeat;
     background-size: cover;
     transform: scale(1.1); /*so there is no white border caused by the blur*/
-
-    animation-name: blur;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
 }
 .cont{
     width: 100%;
@@ -108,9 +104,6 @@ html,body{
     width: auto;
     text-align: center;
     margin: 0;
-}
-.head h1:hover{
-    transform: rotateY(180deg);
 }
 .head .doscroll{
     border-bottom-color: rgba(255,255,255,0.9);
