@@ -65,10 +65,3 @@ for(var i = 0; i < doscs.length; i++){
         scTo(document.getElementsByClassName("fly")[1],this.className.split("ds_")[1]*window.innerHeight,200);
     }
 }
-//Title
-document.getElementById("title").onmouseover = function () {
-    document.title = "Renker Robin";
-};
-document.getElementById("title").onmouseout = function () {
-    document.title = "Robin Renker";
-};
