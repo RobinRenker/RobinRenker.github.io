@@ -7,11 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="fly back"></div>
-<div class="fly">
+<div class="fly back">
+    <div class="beach"></div>
+    <video class="fpv t" loop autoplay muted>
+        <source src="a/fpv.mp4" type="video/mp4">
+    </video>
+</div>
+<div class="fly front">
     <div class="cont head c t_m">
         <h1 id="title">Robin Renker</h1>
-        <a class="doscroll ds_1"></a>
     </div>
     <div class="cont me t_m">
         <div class="card spin c">
@@ -32,7 +36,9 @@
                 <a class="link t" title="LinkedIn" href="https://www.linkedin.com/in/robinrenker/" style="background-image: url('a/linkedin.svg')"></a>
             </div>
         </div>
-        <a class="doscroll ds_2"></a>
+    </div>
+    <div class="cont c t_m">
+        <h1>FPV</h1>
     </div>
     <div class="cont co t_v">
         <div class="frame">
@@ -58,12 +64,7 @@
                 </div>
             </div>
         </div>
-        <!--
-        <a class="doscroll spike" onclick="scr(3)"></a>
-        <a class="doscroll" onclick="scr(3)"></a>
-        -->
     </div>
-    <!--<div class="cont work t_m"></div>-->
 </div>
 <script src="app.js"></script>
 </body>

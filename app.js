@@ -25,25 +25,18 @@ function checkClipPath() {
         }
     }
 }
-function scTo(el, to, du) {
-    var di = to - el.scrollTop;
-    var pt = di /du * 10;
-    setTimeout(function() {
-        el.scrollTop = el.scrollTop + pt;
-        if (el.scrollTop === to) return;
-        scTo(el, to, du - 10);
-    }, 10);
-}
-function scCo() {
-    clearTimeout(wheelTim);
-    wheelTim = setTimeout(function () {
-        var el = document.getElementsByClassName("fly")[1];
-        var d = el.scrollTop / window.innerHeight;
-        var w = Math.round(d);
-        if(w-d > -0.25 && w-d < 0.25){
-            scTo(el,w*window.innerHeight,200);
+function scr(){
+    var d = Math.round(document.getElementsByClassName("fly")[1].scrollTop / (window.innerHeight / 2));
+    var cl = document.getElementsByClassName("fpv")[0].className;
+
+    if(d >= 3 && d <= 5){
+        if(cl.indexOf('show') == -1){
+            document.getElementsByClassName("fpv")[0].className = cl+" show";
         }
-    },500);
+    } else {
+        document.getElementsByClassName("fpv")[0].className = cl.replace(" show", "");
+    }
+    console.log(d);
 }
 //###################
 checkClipPath();
@@ -55,9 +48,9 @@ document.getElementById("me").addEventListener("mouseleave",function () {
     this.className = this.className.replace(" anim", "");
 });
 //Scrolling
-window.addEventListener("wheel",scCo);
-window.addEventListener("touchmove",scCo);
-window.addEventListener("resize",scCo);
+window.addEventListener("wheel",scr);
+window.addEventListener("touchmove",scr);
+window.addEventListener("resize",scr);
 //Scroll help
 var doscs = document.getElementsByClassName('doscroll');
 for(var i = 0; i < doscs.length; i++){

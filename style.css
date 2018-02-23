@@ -28,29 +28,16 @@ html,body{
 }
 .back{
     overflow: hidden;
-    background-image: url("a/sunset.jpg");
-    background-position: center;
-    background-repeat:no-repeat;
-    background-size: cover;
     transform: scale(1.1); /*so there is no white border caused by the blur*/
+}
+.front{
+    background-color: rgba(255,255,255,0.7);
 }
 .cont{
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
-}
-.doscroll{
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 50px);
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 40px solid;
-    transform: translateY(1px);
-    cursor: pointer;
 }
 .card{
     width: 100%;
@@ -100,13 +87,33 @@ html,body{
 }
 /*########################################*/
 /*### Head*/
+.head{
+    height: 50%;
+}
 .head h1{
     width: auto;
     text-align: center;
     margin: 0;
 }
-.head .doscroll{
-    border-bottom-color: rgba(255,255,255,0.9);
+/*########################################*/
+.back .beach{
+    background-image: url("a/sunset.jpg");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.back .fpv{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+.back .fpv.show{
+    opacity: 1;
 }
 
 
