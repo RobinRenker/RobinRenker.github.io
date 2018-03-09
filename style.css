@@ -111,10 +111,9 @@ html,body{
     height: 100%;
     position: absolute;
     opacity: 0;
+    visibility: hidden;
 }
 .back .fpv.show{
     opacity: 1;
+    visibility: visible;
 }
-
-
-

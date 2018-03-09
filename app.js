@@ -1,5 +1,3 @@
-var wheelTim = null;
-//###################
 function checkClipPath() {
     var base = 'clipPath',
         prefixes = [ 'webkit', 'moz', 'ms', 'o' ],
@@ -29,7 +27,7 @@ function scr(){
     var d = Math.round(document.getElementsByClassName("fly")[1].scrollTop / (window.innerHeight / 2));
     var cl = document.getElementsByClassName("fpv")[0].className;
 
-    if(d >= 3 && d <= 5){
+    if(d >= 3 && d < 5){
         if(cl.indexOf('show') == -1){
             document.getElementsByClassName("fpv")[0].className = cl+" show";
         }
@@ -51,10 +49,3 @@ document.getElementById("me").addEventListener("mouseleave",function () {
 window.addEventListener("wheel",scr);
 window.addEventListener("touchmove",scr);
 window.addEventListener("resize",scr);
-//Scroll help
-var doscs = document.getElementsByClassName('doscroll');
-for(var i = 0; i < doscs.length; i++){
-    doscs[i].onclick = function () {
-        scTo(document.getElementsByClassName("fly")[1],this.className.split("ds_")[1]*window.innerHeight,200);
-    }
-}
