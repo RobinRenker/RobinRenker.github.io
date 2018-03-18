@@ -1,0 +1,55 @@
+.me .image{
+    width: 95%;
+    height: 95%;
+    background-image: url("../a/me.svg");
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.tile.links{
+    height: 50%;
+}
+.links .wrap{
+    height: 100px;
+}
+.links .link{
+    margin: 5px 15px;
+    width: 90px;
+    height: 90px;
+    float: left;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.2s ease;
+}
+.links .link:hover{
+    transform: scale(1.1);
+}
+.links .spacer{
+    position: relative;
+    float: left;
+    width: 20px;
+    border-left: 25px solid transparent;
+    border-bottom: 100px solid #EB357E;
+    animation-name: wiggle;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+.links .spacer .corner{
+    position: absolute;
+    right: 0;
+    border-left: 25px solid transparent;
+    border-bottom: 100px solid #68E4DD;
+}
+@media screen and (max-width: 500px) {
+    .links .spacer{
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .tile.links{
+        flex-direction: column;
+    }
+    .links .link{
+        margin: 15px;
+    }
+}

@@ -1,15 +1,13 @@
 @import "s/fonts.css";
 @import "s/animations.css";
 @import "s/head.css";
+@import "s/me.css";
 
 html,body{
     margin:0;
     padding:0;
     width:100%;
     height:100%;
-    background-color: #FFFFFF;
-    position: relative;
-    overflow: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 ::-webkit-scrollbar {
@@ -28,9 +26,23 @@ html,body{
 .bc2{
     background-color: #EB357E;
 }
-.front{
-    width: 100%;
-    height: 100%;
+.c{
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.tile{
+    width: 100%;
+    height: 100%;
+}
+.card{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+@media (orientation: portrait){
+    .card{
+        width: 100%;
+        height: 50%;
+    }
 }

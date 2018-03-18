@@ -1,8 +1,8 @@
-.head{
-    width: 100%;
-    height: 200px;
+.tile.head{
+    height: 80%;
 }
 .head .wrap{
+    height: 200px;
     margin: 0 auto;
     display: table;
     position: relative;
