@@ -1,9 +1,8 @@
 .tile.head{
-    height: 80%;
+    height: 60%;
 }
 .head .wrap{
     height: 200px;
-    margin: 0 auto;
     display: table;
     position: relative;
     cursor: pointer;
@@ -63,12 +62,15 @@
         padding-left: 0;
         padding-right: 0;
     }
-}
-@media screen and (max-width: 600px) {
     .head .wrap h1:after {
         content: "Robin";
     }
     .head .wrap .overlay h1:after{
         content: "Renker";
+    }
+}
+@media screen and (max-width: 450px) {
+    .head .wrap:hover > .overlay{
+        opacity: 0;
     }
 }
