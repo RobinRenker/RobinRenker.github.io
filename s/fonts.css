@@ -13,11 +13,14 @@ h2{
     text-align: center;
     font-family: 'Amaranth', sans-serif;
 }
-p {
+p{
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+.f {
     font-size: 48px;
     font-family: 'Amaranth', sans-serif;
-    width: 100%;
-    text-align: center;
 }
 
 @media screen and (max-width: 600px) {

@@ -6,6 +6,11 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+.me .info{
+    flex-direction: column;
+}
+
+
 .tile.links{
     height: 50%;
 }
@@ -42,6 +47,7 @@
     right: 0;
     border-left: 25px solid transparent;
     border-bottom: 100px solid #68E4DD;
+    transform: scale(1.1); /*to prevent IE overflow bug*/
 }
 @media screen and (max-width: 800px) {
     .links .text{
