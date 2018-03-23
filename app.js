@@ -1,65 +1,32 @@
-var scrCorTim = null;
-//###################
-function scr(i) {
-    animScr(document.getElementsByClassName("fly")[1],window.innerHeight*i,200,null);
-}
-function animScr(el,aim,dur,speed) {
-    if(dur != null){
-        speed = (aim - el.scrollTop)/(dur / 10);
-    }
-    var interval = setInterval(function () {
-        if(aim > el.scrollTop){
-            if(aim < el.scrollTop + speed){
-                el.scrollTop = aim;
-            } else {
-                el.scrollTop = el.scrollTop + speed;
-            }
-        } else if (aim < el.scrollTop) {
-            if(aim > el.scrollTop - speed){
-                el.scrollTop = aim;
-            } else {
-                el.scrollTop = el.scrollTop - speed;
-            }
-        } else {
-            clearInterval(interval);
-        }
-    },10);
-}
-function checkClipPath() {
-    var base = 'clipPath',
-        prefixes = [ 'webkit', 'moz', 'ms', 'o' ],
-        properties = [ base ],
-        testElement = document.createElement( 'testelement' ),
-        attribute = 'polygon(50% 0%, 0% 100%, 100% 100%)';
+var i = 0;
 
-    for ( var i = 0, l = prefixes.length; i < l; i++ ) {
-        var prefixedProperty = prefixes[i] + base.charAt( 0 ).toUpperCase() + base.slice( 1 ); // remember to capitalize!
-        properties.push( prefixedProperty );
-    }
-    for ( var i = 0, l = properties.length; i < l; i++ ) {
-        var property = properties[i];
-        if ( testElement.style[property] === '' ) {
-            testElement.style[property] = attribute;
-            if ( testElement.style[property] === '' ) {
-                var elements = document.getElementsByClassName("glitch");
-                for (var y = 0; y < 4; y++) {
-                    elements[0].className = "";
-                }
-            }
-        }
-    }
+function spawn() {
+    var or = Math.round(Math.random() * 360);
+
+    var el = document.createElement("div");
+
+    el.className = "rail";
+    el.id = "bean"+i;
+    i++;
+    el.style.transform = 'rotate('+or+'deg)';
+    el.innerHTML = createBean();
+    document.getElementsByClassName("beans")[0].appendChild(el);
+    setTimeout(function () {document.getElementById(el.id).remove()},3000);
 }
-//###################
-document.getElementsByClassName('fly')[1].addEventListener("scroll", function () {
-    clearTimeout(scrCorTim);
-    scrCorTim = setTimeout(function () {
-        var el = document.getElementsByClassName("fly")[1];
-        var aim = Math.round(el.scrollTop / window.innerHeight)*window.innerHeight;
-        var maxdif = window.innerHeight*0.2;
-        if(el.scrollTop - aim < maxdif && el.scrollTop - aim > -maxdif){
-            animScr(el,aim,null,8);
+
+function createBean() {
+    var hexnum = function () {
+        var r = Math.round(Math.random()*255).toString(16);
+        if(r.length == 1){
+            r = "0"+r;
         }
-    },500);
-});
-//###################
-checkClipPath();
+        return r;
+    }
+    var col = "#"+hexnum()+hexnum()+hexnum();
+    var p1 = '<svg width="100" height="100" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M25 25 C 40 50, 60 65, 75 75" stroke-width="50" stroke="black" fill="transparent" stroke-linecap="round"/><path d="M25 25 C 40 50, 60 65, 75 75" stroke-width="40" stroke="';
+    var p2 = '" fill="transparent" stroke-linecap="round"/></svg>';
+    return p1+col+p2;
+}
+document.getElementById("icecreamcone").onclick = function () {
+    spawn();
+};

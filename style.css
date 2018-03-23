@@ -2,6 +2,7 @@
 @import "s/animations.css";
 @import "s/head.css";
 @import "s/me.css";
+@import "s/cone.css";
 
 html,body{
     margin:0;

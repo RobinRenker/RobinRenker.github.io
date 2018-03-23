@@ -9,10 +9,12 @@
 .me .info{
     flex-direction: column;
 }
-
+.me .info p{
+ margin-left: -40px;
+}
 
 .tile.links{
-    height: 50%;
+    height: 25%;
 }
 .links .text{
     margin: 0 15px;
@@ -62,6 +64,7 @@
 @media screen and (max-width: 400px) {
     .tile.links{
         flex-direction: column;
+        height: 50%;
     }
     .links .link{
         margin: 15px;

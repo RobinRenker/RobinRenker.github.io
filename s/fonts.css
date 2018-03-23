@@ -14,17 +14,20 @@ h2{
     font-family: 'Amaranth', sans-serif;
 }
 p{
-    text-align: center;
     margin: 0;
-    width: 100%;
+    font-size: 48px;
+    font-family: 'Amaranth', sans-serif;
 }
-.f {
+li {
     font-size: 48px;
     font-family: 'Amaranth', sans-serif;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     p {
+        font-size: 32px;
+    }
+    li {
         font-size: 32px;
     }
 }
