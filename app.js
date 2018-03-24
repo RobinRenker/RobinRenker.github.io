@@ -1,67 +1,29 @@
-var wheelTim = null;
-//###################
-function checkClipPath() {
-    var base = 'clipPath',
-        prefixes = [ 'webkit', 'moz', 'ms', 'o' ],
-        properties = [ base ],
-        testElement = document.createElement( 'testelement' ),
-        attribute = 'polygon(50% 0%, 0% 100%, 100% 100%)';
+var i = 0;
 
-    for ( var i = 0, l = prefixes.length; i < l; i++ ) {
-        var prefixedProperty = prefixes[i] + base.charAt( 0 ).toUpperCase() + base.slice( 1 );
-        properties.push( prefixedProperty );
-    }
-    for ( var i = 0, l = properties.length; i < l; i++ ) {
-        var property = properties[i];
-        if ( testElement.style[property] === '' ) {
-            testElement.style[property] = attribute;
-            if ( testElement.style[property] === '' ) {
-                console.log("no clippath support!");
-                var elements = document.getElementsByClassName("glitch");
-                for (var y = 0; y < 3; y++) {
-                    elements[1].className = "";
-                }
-            }
+function spawn() {
+    var or = Math.round(Math.random() * 360);
+    var el = document.createElement("div");
+    el.className = "rail";
+    el.id = "bean"+i;
+    i++;
+    el.style.transform = 'rotate('+or+'deg)';
+    el.innerHTML = createBean();
+    document.getElementsByClassName("beans")[0].appendChild(el);
+    setTimeout(function () {document.getElementById(el.id).remove()},3000);
+}
+function createBean() {
+    var hexnum = function () {
+        var r = Math.round(Math.random()*255).toString(16);
+        if(r.length == 1){
+            r = "0"+r;
         }
+        return r;
     }
+    var col = "#"+hexnum()+hexnum()+hexnum();
+    var p1 = '<svg width="100" height="100" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M25 25 C 40 50, 60 65, 75 75" stroke-width="50" stroke="black" fill="transparent" stroke-linecap="round"/><path d="M25 25 C 40 50, 60 65, 75 75" stroke-width="40" stroke="';
+    var p2 = '" fill="transparent" stroke-linecap="round"/></svg>';
+    return p1+col+p2;
 }
-function scTo(el, to, du) {
-    var di = to - el.scrollTop;
-    var pt = di /du * 10;
-    setTimeout(function() {
-        el.scrollTop = el.scrollTop + pt;
-        if (el.scrollTop === to) return;
-        scTo(el, to, du - 10);
-    }, 10);
-}
-function scCo() {
-    clearTimeout(wheelTim);
-    wheelTim = setTimeout(function () {
-        var el = document.getElementsByClassName("fly")[1];
-        var d = el.scrollTop / window.innerHeight;
-        var w = Math.round(d);
-        if(w-d > -0.25 && w-d < 0.25){
-            scTo(el,w*window.innerHeight,200);
-        }
-    },500);
-}
-//###################
-checkClipPath();
-//Only animate on mouseover ... animations cause performance issues
-document.getElementById("me").addEventListener("mouseenter",function () {
-    this.className = this.className + " anim";
-});
-document.getElementById("me").addEventListener("mouseleave",function () {
-    this.className = this.className.replace(" anim", "");
-});
-//Scrolling
-window.addEventListener("wheel",scCo);
-window.addEventListener("touchmove",scCo);
-window.addEventListener("resize",scCo);
-//Scroll help
-var doscs = document.getElementsByClassName('doscroll');
-for(var i = 0; i < doscs.length; i++){
-    doscs[i].onclick = function () {
-        scTo(document.getElementsByClassName("fly")[1],this.className.split("ds_")[1]*window.innerHeight,200);
-    }
-}
+document.getElementById("icecreamcone").onclick = function () {
+    spawn();
+};

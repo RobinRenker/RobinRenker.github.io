@@ -1,0 +1,77 @@
+.tile.head{
+    height: 50%;
+}
+.head .wrap{
+    height: 200px;
+    display: table;
+    position: relative;
+    cursor: inherit;
+}
+.head .corner {
+    float: left;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-bottom: 200px solid #EB357E;
+}
+.head .rot {
+    transform: rotate(180deg);
+}
+.head .wrap h1 {
+    font-style: italic;
+    float: left;
+    padding: 52px 24px; /*font size 96*/
+    margin: 0;
+}
+.head .wrap h1:after {
+    content: "Robin Renker";
+}
+.head .wrap .overlay{
+    position: absolute;
+    top:0;
+    left: 20px;
+    right: 20px;
+    width: 0px;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    margin: 0 auto;
+    opacity: 0;
+}
+.head .wrap .overlay .corner{
+    border-bottom: 200px solid #68E4DD;
+}
+.head .wrap .overlay h1{
+    padding-left: 0;
+    padding-right: 0;
+    white-space: nowrap;
+    width: calc(100% - 100px); /*2x 50px corner*/
+}
+.head .wrap:hover > .overlay{
+    width: calc(100% - 40px); /*To create a dash width of 20px each*/
+    opacity: 1;
+}
+@media screen and (max-width: 700px) {
+    .head .wrap .corner {
+        display: none;
+    }
+    .head .wrap .overlay .corner{
+        display: block;
+    }
+    .head .wrap h1 {
+        width: 100vw;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .head .wrap h1:after {
+        content: "Robin";
+    }
+    .head .wrap .overlay h1:after{
+        content: "Renker";
+    }
+}
+@media screen and (max-width: 450px) {
+    .head .wrap:hover > .overlay{
+        opacity: 0;
+    }
+}

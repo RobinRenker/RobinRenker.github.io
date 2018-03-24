@@ -1,31 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Lobster');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Amaranth');
+
 h1 {
     font-size: 96px;
+    line-height: 96px;
     font-family: 'Lobster', "Comic Sans MS", sans-serif;
-    width: 100%;
     text-align: center;
-    cursor: default;
+    font-family: 'Amaranth', sans-serif;
 }
-p {
+h2{
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+    font-family: 'Amaranth', sans-serif;
+}
+p{
+    margin: 0;
     font-size: 48px;
-    font-family: 'Lobster Two', "Comic Sans MS", sans-serif;
-    width: 100%;
-    text-align: center;
+    font-family: 'Amaranth', sans-serif;
 }
-@media screen and (max-width: 600px) {
-    h1 {font-size: 64px;}
-    p {font-size: 32px;}
+li {
+    font-size: 48px;
+    font-family: 'Amaranth', sans-serif;
 }
-.t_m h1{
-    color: #FFFFFF;
-    text-shadow: 3px 3px #6c3291;
-}
-.t_m p{
-    color: #6c3291;
-}
-.t_v h1{
-    color: #ECE4A5;
-}
-.t_v p{
-    color: #ECE4A5;
+
+@media screen and (max-width: 400px) {
+    p {
+        font-size: 32px;
+    }
+    li {
+        font-size: 32px;
+    }
 }

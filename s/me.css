@@ -1,51 +1,72 @@
-/*### Me*/
-.me{
-    background-color: rgba(255,255,255,0.9);
+.me .image{
+    width: 95%;
+    height: 95%;
+    background-image: url("../a/me.svg");
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.me .info{
+    flex-direction: column;
+}
+.me .info p{
+ margin-left: -40px;
 }
 
-.me .doscroll{
-    border-bottom-color: #A34B4B;
+.tile.links{
+    height: 25%;
 }
-.me .imag{
-    position: relative;
-    margin: 5%;
-    width: 90%;
-    height: 85%; /*this should be 90% ... but somehow 85 + 2*5 equals 100*/
+.links .text{
+    margin: 0 15px;
 }
-.me .imag .glitch{
-    background-image: url("../a/me.svg");
-    background-position: center;
-    background-repeat:no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 100%;
+.links .wrap{
+    height: 100px;
 }
-.me .links{
-    display: flex;
-    justify-content: space-around;
-    box-sizing: border-box;
-    padding:5%;
-}
-.me .links .link{
-    width: 70px;
-    height: 70px;
-    background-repeat: no-repeat;
+.links .link{
+    margin: 5px 15px;
+    width: 90px;
+    height: 90px;
+    float: left;
     background-position: center;
     background-size: cover;
+    transition: all 0.2s ease;
 }
-.me .links .link:hover{
-    transform: scale(1.05);
+.links .link:hover{
+    transform: scale(1.1);
 }
-.me p{
-    bottom: 0;
-    position: absolute;
-    margin: 5%;
-    width: 90%;
-    max-height: 90%;
-}
-.me p:after{
-    animation-name: pers;
+.links .spacer{
+    position: relative;
+    float: left;
+    width: 20px;
+    border-left: 25px solid transparent;
+    border-bottom: 100px solid #EB357E;
+    animation-name: wiggle;
     animation-iteration-count: infinite;
-    animation-duration: 14s;
-    content: 'My name is Robin Renker, I am a swiss software dev who happens to have red hair.';
+    animation-duration: 2s;
+}
+.links .spacer .corner{
+    position: absolute;
+    right: 0;
+    border-left: 25px solid transparent;
+    border-bottom: 100px solid #68E4DD;
+    transform: scale(1.1); /*to prevent IE overflow bug*/
+}
+@media screen and (max-width: 800px) {
+    .links .text{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .links .spacer{
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .tile.links{
+        flex-direction: column;
+        height: 50%;
+    }
+    .links .link{
+        margin: 15px;
+    }
 }
