@@ -5,5 +5,6 @@
 }
 @keyframes bean {
     0% {left: 50%}
-    100% {left:calc(100% - 100px);transform:rotate(180deg)}
+    95% {left:calc(100% - 100px);transform:rotate(180deg) scale(0.9)}
+    100% {left:calc(100% - 100px);transform:rotate(180deg) scale(0)}
 }

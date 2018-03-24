@@ -2,9 +2,7 @@ var i = 0;
 
 function spawn() {
     var or = Math.round(Math.random() * 360);
-
     var el = document.createElement("div");
-
     el.className = "rail";
     el.id = "bean"+i;
     i++;
@@ -13,7 +11,6 @@ function spawn() {
     document.getElementsByClassName("beans")[0].appendChild(el);
     setTimeout(function () {document.getElementById(el.id).remove()},3000);
 }
-
 function createBean() {
     var hexnum = function () {
         var r = Math.round(Math.random()*255).toString(16);
