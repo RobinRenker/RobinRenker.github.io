@@ -33,3 +33,13 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
+@media screen and (max-width: 600px) {
+    .cone .beans .rail svg{
+        transform: scale(0.5);
+        animation-name: bean_s;
+    }
+    .cone img {
+        max-width: 90vmin;
+        max-height: 90vmin;
+    }
+}

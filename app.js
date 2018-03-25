@@ -24,6 +24,9 @@ function createBean() {
     var p2 = '" fill="transparent" stroke-linecap="round"/></svg>';
     return p1+col+p2;
 }
+setInterval(function () {
+    spawn();
+},1000);
 document.getElementById("icecreamcone").onclick = function () {
     spawn();
 };
