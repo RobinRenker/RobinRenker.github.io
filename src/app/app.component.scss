@@ -1,0 +1,7 @@
+@import "../styles/styles";
+
+:host{
+  overflow: hidden;
+  position: relative;
+  @extend .app-content;
+}

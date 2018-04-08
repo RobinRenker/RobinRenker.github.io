@@ -1,0 +1,16 @@
+@import "../../../styles/styles";
+@import "../../../styles/variables";
+
+:host{
+  background-image: url("https://thumbs.dreamstime.com/b/gekleurde-schaduwen-van-hand-53122707.jpg");
+  background-size: cover;
+  background-position: center;
+  @extend .app-content;
+  .test{
+    width: 100%;
+    height: 100%;
+    background-image: url($public_path + "/assets/svg/grid.svg");
+    background-repeat: repeat;
+    background-position: center;
+  }
+}

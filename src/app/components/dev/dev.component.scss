@@ -1,0 +1,11 @@
+@import "../../../styles/styles";
+:host{
+  @extend .app-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1{
+    width: 100%;
+    text-align: center;
+  }
+}

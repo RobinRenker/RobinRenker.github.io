@@ -1,0 +1,8 @@
+<div class="menu" [ngClass]="navigationService.getState() ? 'exp' : 'hid'">
+    <div class="spacer"></div>
+    <div class="tile" *ngFor="let conf of navigationService.configs; let i = index" (click)="this.navigationService.setIndex(i)">
+        <h1 [ngStyle]="{'text-decoration': navigationService.navigationIndex == i ? 'underline' : ''}">{{conf.title}}</h1>
+    </div>
+    <div class="spacer"></div>
+</div>
+<navigation-switch class="switch" (click)="navigationService.changeState()"></navigation-switch>

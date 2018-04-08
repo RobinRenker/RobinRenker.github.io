@@ -1,0 +1,23 @@
+@import 'variables';
+
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Poppins');
+
+/*
+  font-family: 'Lobster Two', cursive;
+  font-family: 'Poppins', sans-serif;
+ */
+
+h1{
+  font-family: 'Lobster Two', cursive;
+  font-size: 3*$font-size;
+  color:$c-black;
+  //text-shadow: 0 0 $font-size/2 $c-black; //glow
+  @media (max-width: $break-mobile){
+    font-size: 2*$font-size;
+  }
+}
+p{
+  font-family: 'Poppins', sans-serif;
+  font-size: $font-size;
+  color:white;
+}

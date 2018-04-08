@@ -1,0 +1,54 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+
+:host{
+  z-index: 100;
+  cursor: pointer;
+  width: 70px;
+  height: 66px;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  .switch-wrap{
+    width: 70px;
+    height: 66px;
+    position: relative;
+    .bar{
+      position: absolute;
+      @include transition(all, 0.2s, 0s,ease-in-out);
+      width: 50px;
+      float: left;
+      height: 10px;
+      left: 10px;
+      background-color: $c-black;
+
+      &:nth-child(1){
+        top: 10px;
+      }
+      &:nth-child(2){
+        top: 28px;
+      }
+      &:nth-child(3){
+        top: 46px;
+      }
+    }
+    &.active{
+      background-color: transparent;
+      .bar{
+        width: 50px;
+        left: 10px;
+        top: 28px;
+        &:nth-child(1){
+          @include rotate(45deg);
+        }
+        &:nth-child(2){
+          opacity: 0;
+        }
+        &:nth-child(3){
+          @include rotate(-45deg);
+        }
+      }
+    }
+  }
+}
