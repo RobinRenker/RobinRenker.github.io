@@ -1,0 +1,21 @@
+:host{
+  width: 100%;
+  height: 500px;
+  max-height: 70%;
+  background-color: red;
+  display: block;
+  .b{
+    width: 50%;
+    height: 100%;
+  }
+  .title{
+
+  }
+  @media (orientation: portrait) {
+    height: 700px;
+    .b{
+      width: 100%;
+      height: 50%;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+:host{
+  width: 100%;
+  height: (2 * $height);
+  max-height: 75vh;
+  display: flex;
+  flex-direction: row;
+  .side{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.rev{
+      order: 1;
+    }
+    &.co{
+      flex-direction: column;
+    }
+    .image{
+      width: 80%;
+      height: 80%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      @include transition(all,$dur,0s);
+      &:hover{
+        @include transform(scale(1.05));
+      }
+    }
+    h2{
+      color:$c-white;
+    }
+  }
+  @media (max-width:$break-mobile){
+    flex-direction: column;
+    .side.im{
+      order:1;
+    }
+    .side{
+      width: 100%;
+      height: 50%;
+    }
+  }
+}

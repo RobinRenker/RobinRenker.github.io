@@ -20,7 +20,6 @@ export class NavigationService {
                 for(var i = 0; i < this.configs.length; i++){
                     if(event.url == this.configs[i].route){
                         this.navigationIndex = i;
-
                     }
                 }
             }

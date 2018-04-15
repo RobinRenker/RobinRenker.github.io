@@ -16,7 +16,7 @@
     position: relative;
     .bar{
       position: absolute;
-      @include transition(all, 0.2s, 0s,ease-in-out);
+      @include transition(all, 0.2s, 0s);
       width: 50px;
       float: left;
       height: 10px;

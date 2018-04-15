@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewbox="0 0 500 500">
+
+    <defs>
+        <clipPath id="nose">
+            <ellipse cx="250" cy="220" rx="60" ry="190"/>
+        </clipPath>
+        <g id="rocket">
+            <ellipse cx="250" cy="520" rx="50" ry="150" fill="#FDF151"/>
+            <ellipse cx="250" cy="500" rx="40" ry="100" fill="#EA983E"/>
+            <ellipse cx="250" cy="470" rx="30" ry="50" fill="#ea683c"/>
+            <ellipse cx="250" cy="440" rx="20" ry="30" fill="#B83E45"/>
+
+            <ellipse cx="250" cy="220" rx="90" ry="220" fill="#B83E45"/>
+            <polygon points="250,320 360,400 360,500 250,440 140,500 140,400" fill="#B83E45"/>
+            <ellipse cx="250" cy="220" rx="70" ry="200" fill="#fff"/>
+            <polygon points="250,340 345,410 345,475 250,422 155,475 155,410" fill="#fff"/>
+
+            <circle cx="250" cy="270" r="30" fill="#779cba"/>
+            <circle cx="250" cy="270" r="20" fill="#fff"/>
+
+            <polygon points="250,120 223,201 250,185 277,201" fill="#779cba"/>
+            <polygon points="207,152 250,185 293,152" fill="#779cba"/>
+
+            <circle cx="250" cy="40" r="50" fill="#779cba" clip-path="url(#nose)"/>
+
+            <polygon points="220,440 250,380 280,440" fill="#B83E45"/>
+            <polygon points="250,360 285,430 335,458 335,415 250,350 165,415 165,458 215,430" fill="#779cba"/>
+        </g>
+    </defs>
+
+    <use href="#rocket" xlink:href="#rocket" x="0" y="-80" transform="rotate(45,250,250)"/>
+
+</svg>
+
+

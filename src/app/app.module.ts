@@ -14,6 +14,9 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { NavigationSwitchComponent } from './components/navigation/navigation-switch/navigation-switch.component';
 import { MeComponent } from "./components/me/me.component";
 import { DevComponent } from "./components/dev/dev.component";
+import { TileComponent } from "./components/tile/tile.component";
+import { MeFollowComponent } from "./components/me/me-follow/me-follow.component";
+import { MePanelComponent } from "./components/me/me-panel/me-panel.component";
 
 @NgModule({
   bootstrap: [
@@ -24,7 +27,10 @@ import { DevComponent } from "./components/dev/dev.component";
       NavigationComponent,
       NavigationSwitchComponent,
       MeComponent,
-      DevComponent
+      MeFollowComponent,
+      MePanelComponent,
+      DevComponent,
+      TileComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="550" height="800" viewbox="0 0 550 800">
+    <defs>
+        <g id="suitb">
+            <polygon points="450,500 440,585 385,610 330,570 240,580 190,610 120,580 110,495 135,375 120,280 85,385 120,500 120,560 75,560 55,540 15,440 10,360 40,200 65,85 175,35 200,10 315,0 350,35 465,75 525,260 550,330 545,405 500,550 440,570 440,510 475,360 425,255 445,190 425,255 410,360 415,410" fill="#3d5e7a"/>
+
+            <polygon points="525,260 465,75 445,190" fill="#446682"/>
+            <polygon points="525,260 425,255 445,190" fill="#3d5e7a"/>
+            <polygon points="525,260 550,330 475,360 425,255" fill="#446682"/>
+            <polygon points="550,330 545,405 475,360" fill="#3d5e7a"/>
+            <polygon points="545,405 475,360 500,550" fill="#446682"/>
+            <polygon points="440,510 475,360 500,550" fill="#3d5e7a"/>
+            <polygon points="440,510 440,570 500,550" fill="#446682"/>
+            <!-- -->
+            <polygon points="65,85 40,200 120,280 80,160" fill="#446682"/>
+            <polygon points="40,200 120,280 10,360" fill="#3d5e7a"/>
+            <polygon points="85,385 120,280 10,360" fill="#446682"/>
+            <polygon points="85,385 120,500 15,440 10,360" fill="#3d5e7a"/>
+            <polygon points="120,500 15,440 55,540" fill="#446682"/>
+            <polygon points="120,500 120,560 75,560 55,540" fill="#3d5e7a"/>
+            <!-- -->
+            <polygon points="200,10 200,55 175,35" fill="#c4484f"/>
+            <polygon points="205,190 200,55 175,35 160,140" fill="#B83E45"/>
+            <polygon points="205,190 170,210 160,140" fill="#c4484f"/>
+            <polygon points="170,210 205,190 265,340 215,300" fill="#B83E45"/>
+            <polygon points="270,375 265,340 215,300" fill="#c4484f"/>
+            <polygon points="270,375 265,340 310,215 340,260" fill="#B83E45"/>
+            <polygon points="310,215 340,260 360,160" fill="#c4484f"/>
+            <polygon points="310,215 325,45 350,35 360,160" fill="#B83E45"/>
+            <polygon points="315,0 325,45 350,35" fill="#c4484f"/>
+            <!--  -->
+            <polygon points="325,45 315,0 305,35 260,70 265,340 310,215" fill="#f6f6f6"/>
+            <polygon points="265,340 260,70 220,45 200,10 200,55 205,190" fill="#e9e9e9"/>
+            <polygon points="240,580 330,570 280,470" fill="#d1d1d1"/>
+            <polygon points="240,580 330,570 330,555 240,565" fill="#B83E45"/>
+            <!--  -->
+            <polygon points="360,160 350,35 465,75 445,190" fill="#3d5e7a"/>
+            <polygon points="360,160 445,190 340,260" fill="#446682"/>
+            <polygon points="425,255 445,190 340,260 410,360" fill="#3d5e7a"/>
+            <polygon points="340,260 410,360 415,410 270,375" fill="#446682"/>
+            <polygon points="280,470 415,410 270,375" fill="#3d5e7a"/>
+            <polygon points="280,470 415,410 450,500" fill="#446682"/>
+            <polygon points="280,470 450,500 440,585 385,610 330,570" fill="#3d5e7a"/>
+            <!--  -->
+            <polygon points="160,140 80,160 65,85 175,35" fill="#446682"/>
+            <polygon points="120,280 170,210 160,140 80,160" fill="#3d5e7a"/>
+            <polygon points="215,300 120,280 170,210" fill="#446682"/>
+            <polygon points="135,375 270,375 215,300 120,280" fill="#3d5e7a"/>
+            <polygon points="280,470 110,495 135,375 270,375" fill="#446682"/>
+            <polygon points="280,470 110,495 240,580" fill="#3d5e7a"/>
+            <polygon points="110,495 240,580 190,610 120,580" fill="#446682"/>
+        </g>
+        <g id="tie">
+            <polygon points="0,50 70,25 0,5" fill="#c4484f"/>
+            <polygon points="85,50 25,25 90,0" fill="#c4484f"/>
+        </g>
+        <g id="pocket">
+            <polygon points="0,40 30,5 50,35" fill="#e9e9e9"/>
+            <polygon points="10,35 45,0 60,35" fill="#d1d1d1"/>
+            <polygon points="20,35 55,5 65,35" fill="#e9e9e9"/>
+            <polygon points="0,35 70,30 70,50 0,56" fill="#c4484f"/>
+        </g>
+        <g id="face">
+            <polygon points="160,170 160,190 150,225 105,260 65,235 45,200 45,170" fill="#c68642"/>
+            <polygon points="150,215 118,245 90,245 60,217 42,175 38,132 50,115 100,112 145,87 158,120 164,160" fill="#e0ac69"/>
+            <!-- -->
+            <polygon points="145,87 164,43 175,109 167,105 158,120" fill="#802A2A"/>
+            <polygon points="38,132 50,115 24,100 27,125" fill="#802A2A"/>
+            <!-- -->
+            <polygon points="38,132 42,175 20,150 17,118" fill="#c68642"/>
+            <polygon points="164,160 158,120 167,105 180,110 175,148" fill="#c68642"/>
+            <!-- -->
+            <polygon points="168,45 145,87 100,112 50,115 24,100 14,70 50,25 112,15 145,25" fill="#a52724"/>
+        </g>
+    </defs>
+
+    <use y="190" href="#suitb" xlink:href="#suitb"/>
+    <use y="245" x="215" href="#tie" xlink:href="#tie"/>
+    <use y="360" x="355" href="#pocket" xlink:href="#pocket"/>
+    <use y="0" x="155" href="#face" xlink:href="#face"/>
+</svg>

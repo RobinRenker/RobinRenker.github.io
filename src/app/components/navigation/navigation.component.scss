@@ -7,7 +7,7 @@
   top: 0;
   width: 0;
   height: 100%;
-
+  z-index: 100;
   .menu {
     position: relative;
     width: 0;
@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    @include transition(opacity,$dur,0s,ease-in-out);
+    @include transition(opacity,$dur,0s);
     .spacer{
       width: 100%;
       height: 66px;
@@ -36,7 +36,7 @@
         margin: 20px 10px;
         width: 100%;
         cursor: pointer;
-        @include transition(all,$dur,0s,ease-in-out);
+        @include transition(all,$dur,0s);
         @include user_select(none);
       }
       &:hover{

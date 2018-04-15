@@ -36,7 +36,7 @@
   border-left: $left solid $leftc;
   border-right: $right solid $rightc;
 }
-@mixin transition($what,$duration,$delay,$ease){
+@mixin transition($what,$duration,$delay){
   transition: $what $duration ease-in-out $delay;
   -webkit-transition-delay: $what $duration ease-in-out $delay;
 }

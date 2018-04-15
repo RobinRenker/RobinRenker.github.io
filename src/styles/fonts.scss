@@ -16,8 +16,15 @@ h1{
     font-size: 2*$font-size;
   }
 }
+h2{
+  font-family: 'Lobster Two', cursive;
+  font-size: 2*$font-size;
+  color:$c-black;
+  margin: 0;
+}
 p{
   font-family: 'Poppins', sans-serif;
   font-size: $font-size;
   color:white;
+  margin: 0;
 }
