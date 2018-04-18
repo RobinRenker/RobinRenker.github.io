@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {publicpath} from '../../../config/conf';
 
 @Component({
     selector: 'me-follow',
@@ -6,11 +7,17 @@ import {Component} from '@angular/core';
     styleUrls: ['./me-follow.component.scss']
 })
 export class MeFollowComponent {
+    public p: String = publicpath + "/assets/svg/";
     public links: LinkConfig[] = [
-        new LinkConfig("https://github.com/RobinRenker","/assets/svg/github.svg","Github"),
-        new LinkConfig("https://www.xing.com/profile/Robin_Renker","/assets/svg/Xing.svg","Xing"),
-        new LinkConfig("https://www.linkedin.com/in/robinrenker","/assets/svg/linkedin.svg","LinkedIn")
+        new LinkConfig("https://github.com/RobinRenker","github.svg","Github"),
+        new LinkConfig("https://www.xing.com/profile/Robin_Renker","xing.svg","Xing"),
+        new LinkConfig("https://www.linkedin.com/in/robinrenker","linkedin.svg","LinkedIn")
     ];
+    constructor(){
+        setInterval(() => {
+            console.log(this.p);
+        },2000)
+    }
 }
 export class LinkConfig {
     public link:string = "";

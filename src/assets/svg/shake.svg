@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewbox="0 0 500 500">
 
-
-
     <defs>
         <clipPath id="n1">
             <circle cx="250" cy="350" r="200"/>
@@ -25,6 +23,7 @@
 
     <ellipse cx="260" cy="300" rx="60" ry="140" fill="#fff" clip-path="url(#n3)"/>
 
+    <text x="140" y="270" style="font-size:80px" fill="yellow">In Dev.</text>
 
 </svg>
 

@@ -8,8 +8,7 @@ export class NavigationService {
     public navigationIndex: number = 0;
     public configs: NavigationConfig[] = [
         new NavigationConfig("Me","/me"),
-        new NavigationConfig("Stuff I made","/dev"),
-        new NavigationConfig("First Person View","/dev"),
+        new NavigationConfig("Development","/dev"),
         new NavigationConfig("Development","/dev"),
         new NavigationConfig("Development","/dev")
     ];
