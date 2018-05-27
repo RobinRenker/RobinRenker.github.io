@@ -19,6 +19,7 @@ import { MeFollowComponent } from "./components/me/me-follow/me-follow.component
 import { MePanelComponent } from "./components/me/me-panel/me-panel.component";
 import { PineappleComponent } from "./components/pineapple/pineapple.component";
 import { PineappleBackComponent } from "./components/pineapple/pineapple-back.component/pineapple-back.component";
+import { LostComponent } from "./components/lost/lost.component";
 
 @NgModule({
   bootstrap: [
@@ -34,7 +35,8 @@ import { PineappleBackComponent } from "./components/pineapple/pineapple-back.co
       DevComponent,
       TileComponent,
       PineappleComponent,
-      PineappleBackComponent
+      PineappleBackComponent,
+      LostComponent
   ],
   imports: [
     BrowserModule,

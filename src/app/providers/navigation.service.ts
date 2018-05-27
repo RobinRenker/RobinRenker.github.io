@@ -7,7 +7,7 @@ export class NavigationService {
     private navigationExpanded: boolean = false;
     public navigationIndex: number = 0;
     public configs: NavigationConfig[] = [
-        new NavigationConfig("Me","/me"),
+        new NavigationConfig("Blueberry","/blueberry"),
         new NavigationConfig("Pineapple","/pineapple"),
         new NavigationConfig("Development","/dev"),
         new NavigationConfig("Development","/dev")
