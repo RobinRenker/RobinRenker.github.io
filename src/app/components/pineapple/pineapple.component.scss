@@ -1,0 +1,11 @@
+@import "../../../styles/styles";
+@import "../../../styles/variables";
+
+:host {
+  @extend .app-content;
+
+  pineapple-back{
+    width: 100%;
+    height: 100%;
+  }
+}

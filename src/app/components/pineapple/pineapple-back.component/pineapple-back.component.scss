@@ -1,0 +1,38 @@
+@import "../../../../styles/variables";
+
+:host{
+  display: flex;
+  flex-direction: column;
+  .row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    .pineapple{
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      justify-content: center;
+      .cont{
+        width: 70%;
+        height: 70%;
+        position: relative;
+        display: block;
+        .mock{
+          width: 100%;
+          height:100%;
+          display: block;
+          position: absolute;
+          top:0;
+          left: 0;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          &.p{
+            background-image: url($public_path + "/assets/svg/pineapple.svg");
+          }
+        }
+      }
+    }
+  }
+}

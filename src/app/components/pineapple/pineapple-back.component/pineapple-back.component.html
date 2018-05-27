@@ -1,0 +1,12 @@
+<div class="row" *ngFor="let pineapples of row">
+    <div class="pineapple" *ngFor="let pineapple of pineapples">
+        <div class="cont" [ngStyle]="{'transform':
+        'rotate('+pineapple.rotation+'deg) '+
+        'translateX('+pineapple.offsetx+'px) '+
+        'translateY('+pineapple.offsety+'px)'
+        }">
+            <div class="mock" [ngStyle]="{'background-image':'url(/assets/svg/pineprint_'+pineapple.color+'.svg)'}"></div>
+            <div class="mock p"></div>
+        </div>
+    </div>
+</div>
