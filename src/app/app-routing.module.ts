@@ -7,7 +7,7 @@ import { PineappleComponent } from "./components/pineapple/pineapple.component";
 import { LostComponent } from "./components/lost/lost.component";
 
 const routes: Routes = [
-    { path: '', redirectTo: 'me', pathMatch: 'full' },
+    { path: '', redirectTo: 'blueberry', pathMatch: 'full' },
     { path: 'blueberry', component: MeComponent },
     { path: 'dev', component: DevComponent },
     { path: 'pineapple', component: PineappleComponent },
