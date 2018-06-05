@@ -1,4 +1,13 @@
 <pineapple-back class="f"></pineapple-back>
-<div class="f content">
+<div class="content f">
+    <div class="f c">
+        <pineapple-head></pineapple-head>
+    </div>
+    <div class="f">
+        <pineapple-content *ngFor="let content of contents"
+        [text]="content.text" [img]="content.img">
+
+        </pineapple-content>
+    </div>
 
 </div>

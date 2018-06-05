@@ -1,0 +1,20 @@
+@import "variables";
+
+@keyframes pineappleHead {
+  0%     {background-image: url($pineapple-head-face1)}
+  12.49% {background-image: url($pineapple-head-face1)}
+  12.5%  {background-image: url($pineapple-head-face2)}
+  24.99% {background-image: url($pineapple-head-face2)}
+  25%    {background-image: url($pineapple-head-face3)}
+  37.49% {background-image: url($pineapple-head-face3)}
+  37.5%  {background-image: url($pineapple-head-face4)}
+  49.99% {background-image: url($pineapple-head-face4)}
+  50%    {background-image: url($pineapple-head-face5)}
+  62.49% {background-image: url($pineapple-head-face5)}
+  62.5%  {background-image: url($pineapple-head-face4)}
+  74.99% {background-image: url($pineapple-head-face4)}
+  75%    {background-image: url($pineapple-head-face3)}
+  87.49% {background-image: url($pineapple-head-face3)}
+  87.5%  {background-image: url($pineapple-head-face2)}
+  100%   {background-image: url($pineapple-head-face2)}
+}

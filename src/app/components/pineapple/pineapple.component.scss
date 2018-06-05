@@ -1,9 +1,9 @@
 @import "../../../styles/styles";
-@import "../../../styles/variables";
 
 :host {
   @extend .app-content;
   position: relative;
+  overflow: scroll;
 
   .f{
     width: 100%;
@@ -13,5 +13,19 @@
     position: absolute;
     top:0;
     left: 0;
+    overflow: scroll;
+
+    .c{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    pineapple-head{
+      height: 40vh;
+      width: 40vh;
+      max-width: 40vw;
+      max-height: 40vw;
+    }
   }
 }

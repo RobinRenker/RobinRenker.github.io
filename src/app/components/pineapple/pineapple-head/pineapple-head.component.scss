@@ -1,0 +1,29 @@
+@import "../../../../styles/animations";
+
+:host{
+  display: block;
+  position: relative;
+  transform: rotate(45deg);
+  overflow: hidden;
+  border: 10px solid white;
+  .image{
+    transform: rotate(-45deg);
+    width: 150%;
+    height: 150%;
+    background-color: blue;
+    position: absolute;
+    top:-25%;
+    left: -25%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    &.ani{
+      animation-name: pineappleHead;
+    }
+  }
+}

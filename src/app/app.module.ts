@@ -18,8 +18,10 @@ import { TileComponent } from "./components/tile/tile.component";
 import { MeFollowComponent } from "./components/me/me-follow/me-follow.component";
 import { MePanelComponent } from "./components/me/me-panel/me-panel.component";
 import { PineappleComponent } from "./components/pineapple/pineapple.component";
-import { PineappleBackComponent } from "./components/pineapple/pineapple-back.component/pineapple-back.component";
+import { PineappleBackComponent } from "./components/pineapple/pineapple-back/pineapple-back.component";
 import { LostComponent } from "./components/lost/lost.component";
+import { PineappleHeadComponent } from "./components/pineapple/pineapple-head/pineapple-head.component";
+import { PineappleContentComponent } from "./components/pineapple/pineapple-content/pineapple-content.component";
 
 @NgModule({
   bootstrap: [
@@ -36,7 +38,9 @@ import { LostComponent } from "./components/lost/lost.component";
       TileComponent,
       PineappleComponent,
       PineappleBackComponent,
-      LostComponent
+      LostComponent,
+      PineappleHeadComponent,
+      PineappleContentComponent
   ],
   imports: [
     BrowserModule,
