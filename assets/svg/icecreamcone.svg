@@ -32,7 +32,7 @@
             <polygon points="350,170 280,40 50,190 15,252 70,290 90,285 170,330 185,315 190,325 255,320 275,285 300,310 335,310 340,300, 370,300 390,260" fill="#ff284d"/>
             <!--Stroke-->
             <path d="M250 0 Q 440 150 290 200" stroke="#000" stroke-width="10" fill="#ff284d" stroke-linecap="round"/>
-            <path d="M250 0 Q 290 80 180 80" stroke="#000" stroke-width="10" fill="transparent" stroke-linecap="round"/>
+            <path d="M250 0 Q 290 80 180 80" stroke="#000" stroke-width="10" fill="none" stroke-linecap="round"/>
             <path d="M360 300 Q 432 308 385 250" stroke="#000" stroke-width="10" fill="#ff284d" stroke-linecap="round"/>
             <path d="M330 280 Q 450 230 350 170" stroke="#000" stroke-width="10" fill="#ff284d" stroke-linecap="round"/>
             <path d="M40 200 Q -5 260 40 347" stroke="#000" stroke-width="10" fill="none" stroke-linecap="round"/>
@@ -104,9 +104,9 @@
             <line x1="413" x2="420" y1="75" y2="35" stroke-width="30" stroke="#974020" stroke-linecap="round"/>
             <line x1="385" x2="417" y1="90" y2="15" stroke-width="30" stroke="#974020"/>
             <!--Stroke-->
-            <path d="M400 5 Q 400 130 155 158" stroke="#000" stroke-width="10" fill="transparent" stroke-linecap="round"/>
-            <path d="M430 70 Q 400 140 190 180" stroke="#000" stroke-width="10" fill="transparent" stroke-linecap="round"/>
-            <path d="M400 5 Q 450 30 430 70" stroke="#000" stroke-width="10" fill="transparent" stroke-linecap="round"/>
+            <path d="M400 5 Q 400 130 155 158" stroke="#000" stroke-width="10" fill="none" stroke-linecap="round"/>
+            <path d="M430 70 Q 400 140 190 180" stroke="#000" stroke-width="10" fill="none" stroke-linecap="round"/>
+            <path d="M400 5 Q 450 30 430 70" stroke="#000" stroke-width="10" fill="none" stroke-linecap="round"/>
             <!--Fill-->
             <line x1="200" x2="370" y1="205" y2="265" stroke-width="30" stroke="#974020" stroke-linecap="round"/>
             <line x1="200" x2="70" y1="205" y2="130" stroke-width="30" stroke="#974020" stroke-linecap="round"/>
@@ -114,10 +114,10 @@
             <line x1="18" x2="58" y1="70" y2="130" stroke-width="20" stroke="#974020" stroke-linecap="round"/>
             <line x1="30" x2="110" y1="70" y2="140" stroke-width="20" stroke="#974020" stroke-linecap="round"/>
             <!--Stroke-->
-            <path d="M30 45 Q 150 200 370 245" stroke="#000" stroke-width="10" fill="transparent" stroke-linecap="round"/>
-            <path d="M10 60 Q 0 160 360 280" stroke="#000" stroke-width="10" fill="transparent" stroke-linecap="round"/>
-            <path d="M10 60 Q 15 40 30 45" stroke="#000" stroke-width="10" fill="transparent" stroke-linecap="round"/>
-            <path d="M360 280 Q 410 275 370 245" stroke="#000" stroke-width="10" fill="transparent" stroke-linecap="round"/>
+            <path d="M30 45 Q 150 200 370 245" stroke="#000" stroke-width="10" fill="none" stroke-linecap="round"/>
+            <path d="M10 60 Q 0 160 360 280" stroke="#000" stroke-width="10" fill="none" stroke-linecap="round"/>
+            <path d="M10 60 Q 15 40 30 45" stroke="#000" stroke-width="10" fill="none" stroke-linecap="round"/>
+            <path d="M360 280 Q 410 275 370 245" stroke="#000" stroke-width="10" fill="none" stroke-linecap="round"/>
         </g>
         <g id="hash">
             <path d="M385 145 Q 387 180 360 235" fill="#974020"/>

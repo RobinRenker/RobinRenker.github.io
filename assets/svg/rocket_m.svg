@@ -1,0 +1,24 @@
+<svg height="500" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <clipPath id="a">
+        <ellipse cx="250" cy="220" rx="60" ry="190"/>
+    </clipPath>
+    <g transform="matrix(.70710678 .70710678 -.70710678 .70710678 306.5685424 -160.1219334)">
+        <ellipse cx="250" cy="520" fill="#fdf151" rx="50" ry="150"/>
+        <ellipse cx="250" cy="500" fill="#ea983e" rx="40" ry="100"/>
+        <ellipse cx="250" cy="470" fill="#ea683c" rx="30" ry="50"/>
+        <g fill="#b83e45">
+            <ellipse cx="250" cy="440" rx="20" ry="30"/>
+            <ellipse cx="250" cy="220" rx="90" ry="220"/>
+            <path d="m250 320 110 80v100l-110-60-110 60v-100z"/>
+        </g>
+        <ellipse cx="250" cy="220" fill="#fff" rx="70" ry="200"/>
+        <path d="m250 340 95 70v65l-95-53-95 53v-65z" fill="#fff"/>
+        <circle cx="250" cy="270" fill="#779cba" r="30"/>
+        <circle cx="250" cy="270" fill="#fff" r="20"/>
+        <path d="m250 120-27 81 27-16 27 16z" fill="#779cba"/>
+        <path d="m207 152 43 33 43-33z" fill="#779cba"/>
+        <circle clip-path="url(#a)" cx="250" cy="40" fill="#779cba" r="50"/>
+        <path d="m220 440 30-60 30 60z" fill="#b83e45"/>
+        <path d="m250 360 35 70 50 28v-43l-85-65-85 65v43l50-28z" fill="#779cba"/>
+    </g>
+</svg>

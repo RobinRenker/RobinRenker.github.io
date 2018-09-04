@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewbox="0 0 100 100">
+    <defs>
+        <g id="strip">
+            <polygon points="44,-21 56,-21 51,50 49,50"/>
+        </g>
+    </defs>
+    <use href="#strip" xlink:href="#strip" fill="#B83E45"/>
+    <use href="#strip" xlink:href="#strip" fill="#779cba" transform="rotate(20 50 50)"/>
+    <use href="#strip" xlink:href="#strip" fill="#B83E45" transform="rotate(40 50 50)"/>
+    <use href="#strip" xlink:href="#strip" fill="#779cba" transform="rotate(60 50 50)"/>
+    <use href="#strip" xlink:href="#strip" fill="#B83E45" transform="rotate(80 50 50)"/>
+    <use href="#strip" xlink:href="#strip" fill="#779cba" transform="rotate(100 50 50)"/>
+    <use href="#strip" xlink:href="#strip" fill="#B83E45" transform="rotate(120 50 50)"/>
+    <use href="#strip" xlink:href="#strip" fill="#779cba" transform="rotate(140 50 50)"/>
+    <use href="#strip" xlink:href="#strip" fill="#B83E45" transform="rotate(160 50 50)"/>
+    <use href="#strip" xlink:href="#strip" fill="#779cba" transform="rotate(180 50 50)"/>
+    <use href="#strip" xlink:href="#strip" fill="#B83E45" transform="rotate(200 50 50)"/>
+    <use href="#strip" xlink:href="#strip" fill="#779cba" transform="rotate(220 50 50)"/>
+    <use href="#strip" xlink:href="#strip" fill="#B83E45" transform="rotate(240 50 50)"/>
+    <use href="#strip" xlink:href="#strip" fill="#779cba" transform="rotate(260 50 50)"/>
+    <use href="#strip" xlink:href="#strip" fill="#B83E45" transform="rotate(280 50 50)"/>
+    <use href="#strip" xlink:href="#strip" fill="#779cba" transform="rotate(300 50 50)"/>
+    <use href="#strip" xlink:href="#strip" fill="#B83E45" transform="rotate(320 50 50)"/>
+    <use href="#strip" xlink:href="#strip" fill="#779cba" transform="rotate(340 50 50)"/>
+</svg>
